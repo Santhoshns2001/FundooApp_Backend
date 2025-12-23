@@ -1,0 +1,17 @@
+D:\Projects\FundooNotes\FundooApp\Fundoo.DataAcessLayer\bin\Debug\net8.0\DataAcessLayer.deps.json
+D:\Projects\FundooNotes\FundooApp\Fundoo.DataAcessLayer\bin\Debug\net8.0\DataAcessLayer.runtimeconfig.json
+D:\Projects\FundooNotes\FundooApp\Fundoo.DataAcessLayer\bin\Debug\net8.0\DataAcessLayer.dll
+D:\Projects\FundooNotes\FundooApp\Fundoo.DataAcessLayer\bin\Debug\net8.0\DataAcessLayer.pdb
+D:\Projects\FundooNotes\FundooApp\Fundoo.DataAcessLayer\bin\Debug\net8.0\ModalLayer.dll
+D:\Projects\FundooNotes\FundooApp\Fundoo.DataAcessLayer\bin\Debug\net8.0\ModalLayer.pdb
+D:\Projects\FundooNotes\FundooApp\Fundoo.DataAcessLayer\obj\Debug\net8.0\DataAcessLayer.csproj.AssemblyReference.cache
+D:\Projects\FundooNotes\FundooApp\Fundoo.DataAcessLayer\obj\Debug\net8.0\DataAcessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\FundooNotes\FundooApp\Fundoo.DataAcessLayer\obj\Debug\net8.0\DataAcessLayer.AssemblyInfoInputs.cache
+D:\Projects\FundooNotes\FundooApp\Fundoo.DataAcessLayer\obj\Debug\net8.0\DataAcessLayer.AssemblyInfo.cs
+D:\Projects\FundooNotes\FundooApp\Fundoo.DataAcessLayer\obj\Debug\net8.0\DataAcessLayer.csproj.CoreCompileInputs.cache
+D:\Projects\FundooNotes\FundooApp\Fundoo.DataAcessLayer\obj\Debug\net8.0\DataAces.3D70AC44.Up2Date
+D:\Projects\FundooNotes\FundooApp\Fundoo.DataAcessLayer\obj\Debug\net8.0\DataAcessLayer.dll
+D:\Projects\FundooNotes\FundooApp\Fundoo.DataAcessLayer\obj\Debug\net8.0\refint\DataAcessLayer.dll
+D:\Projects\FundooNotes\FundooApp\Fundoo.DataAcessLayer\obj\Debug\net8.0\DataAcessLayer.pdb
+D:\Projects\FundooNotes\FundooApp\Fundoo.DataAcessLayer\obj\Debug\net8.0\DataAcessLayer.genruntimeconfig.cache
+D:\Projects\FundooNotes\FundooApp\Fundoo.DataAcessLayer\obj\Debug\net8.0\ref\DataAcessLayer.dll

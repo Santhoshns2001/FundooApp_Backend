@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "x0WB8pBH+4KArhWXvM2obm6gbZYOStVTCWzIcF5T3Qk=",
+  "Source": "FundooApp",
+  "BasePath": "_content/FundooApp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
