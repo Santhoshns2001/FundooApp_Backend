@@ -20,5 +20,10 @@ namespace ModalLayer.Entities
         public string Password { get; set; }
         public DateTime Created { get; set; }
         public DateTime ChangedAt { get; set; }
+
+        public ICollection<Label> Labels { get; set; }
+        public ICollection<Notes> Notes { get; set; }
+
+
     }
 }

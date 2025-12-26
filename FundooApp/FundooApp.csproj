@@ -9,6 +9,7 @@
   <ItemGroup>
     <PackageReference Include="MassTransit" Version="8.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="8.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -20,6 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\EmailService\EmailService.csproj" />
     <ProjectReference Include="..\Fundoo.Business\BusinessLogicLayer.csproj" />
     <ProjectReference Include="..\Fundoo.Common\ModalLayer.csproj" />
     <ProjectReference Include="..\Fundoo.DataAcessLayer\DataAcessLayer.csproj" />

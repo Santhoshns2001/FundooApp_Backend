@@ -15,6 +15,7 @@ namespace BusinessLogicLayer.Interfaces
 
         public string LoginUser(LoginDTO loginDTO);
 
-
+        public bool ForgotPassword(string Email);
+        public bool ResetPassword(string email,string password);
     }
 }

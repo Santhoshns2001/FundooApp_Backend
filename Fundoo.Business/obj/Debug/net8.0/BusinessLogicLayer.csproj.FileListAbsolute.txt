@@ -2,7 +2,9 @@ D:\Projects\FundooNotes\FundooApp\Fundoo.Business\bin\Debug\net8.0\BusinessLogic
 D:\Projects\FundooNotes\FundooApp\Fundoo.Business\bin\Debug\net8.0\BusinessLogicLayer.dll
 D:\Projects\FundooNotes\FundooApp\Fundoo.Business\bin\Debug\net8.0\BusinessLogicLayer.pdb
 D:\Projects\FundooNotes\FundooApp\Fundoo.Business\bin\Debug\net8.0\DataAcessLayer.dll
+D:\Projects\FundooNotes\FundooApp\Fundoo.Business\bin\Debug\net8.0\EmailService.dll
 D:\Projects\FundooNotes\FundooApp\Fundoo.Business\bin\Debug\net8.0\ModalLayer.dll
+D:\Projects\FundooNotes\FundooApp\Fundoo.Business\bin\Debug\net8.0\EmailService.pdb
 D:\Projects\FundooNotes\FundooApp\Fundoo.Business\bin\Debug\net8.0\ModalLayer.pdb
 D:\Projects\FundooNotes\FundooApp\Fundoo.Business\bin\Debug\net8.0\DataAcessLayer.pdb
 D:\Projects\FundooNotes\FundooApp\Fundoo.Business\obj\Debug\net8.0\BusinessLogicLayer.csproj.AssemblyReference.cache
@@ -10,6 +12,7 @@ D:\Projects\FundooNotes\FundooApp\Fundoo.Business\obj\Debug\net8.0\BusinessLogic
 D:\Projects\FundooNotes\FundooApp\Fundoo.Business\obj\Debug\net8.0\BusinessLogicLayer.AssemblyInfoInputs.cache
 D:\Projects\FundooNotes\FundooApp\Fundoo.Business\obj\Debug\net8.0\BusinessLogicLayer.AssemblyInfo.cs
 D:\Projects\FundooNotes\FundooApp\Fundoo.Business\obj\Debug\net8.0\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\Projects\FundooNotes\FundooApp\Fundoo.Business\obj\Debug\net8.0\BusinessLogicLayer.sourcelink.json
 D:\Projects\FundooNotes\FundooApp\Fundoo.Business\obj\Debug\net8.0\Business.450209FB.Up2Date
 D:\Projects\FundooNotes\FundooApp\Fundoo.Business\obj\Debug\net8.0\BusinessLogicLayer.dll
 D:\Projects\FundooNotes\FundooApp\Fundoo.Business\obj\Debug\net8.0\refint\BusinessLogicLayer.dll

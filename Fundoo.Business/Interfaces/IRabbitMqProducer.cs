@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace BusinessLogicLayer.Interfaces
 {
-   public  interface IEmailService
+   public  interface IRabbitMqProducer
     {
-        Task SendEmailAsync(string to, string subject, string body);
+       public  void Publish<T>(T message, string queueName);
     }
 }

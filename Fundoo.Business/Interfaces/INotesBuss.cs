@@ -10,7 +10,18 @@ namespace BusinessLogicLayer.Interfaces
 {
    public interface INotesBuss
     {
-        public Notes CreateNotes(int userId,NotesDTO modal);
+        public Task<Notes> CreateNotes(int userId,NotesDTO modal);
 
+        public List<Notes> FetchNotesByTitleAndDescrptiion(string title, string description);
+
+        public Task<List<Notes>> GetAllNotes(int UserId);
+
+        public Notes GetNotesById(int notesId);
+
+        public Task<Notes> UpdateNotes(int userId,int NotesId,NotesDTO modal);
+
+        public bool ToggleArchiveNotes(int userId, int NotesId);
+
+        public bool ToggleTrashNotes(int userId, int NotesId);
     }
 }

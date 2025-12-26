@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BusinessLogicLayer.Modals
+namespace EmailService.Modals
 {
     public class EmailRequest
     {

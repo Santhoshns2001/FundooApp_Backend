@@ -12,6 +12,7 @@ using DataAcessLayer.Interface;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
+using ModalLayer;
 using ModalLayer.DTOs.User;
 using ModalLayer.Entities;
 
@@ -83,6 +84,48 @@ namespace DataAcessLayer.Repositary
 
             return user;
            
+        }
+
+        public ForgotPasswordEvent ForgotPassword(string email)
+        {
+            email = email.ToLower();
+
+            if (!string.IsNullOrWhiteSpace(email))
+            {
+                var user = context.Users.FirstOrDefault(u=> u.Email == email);
+
+                if (user != null)
+                {
+                    ForgotPasswordEvent forgotPassword = new ForgotPasswordEvent();
+
+                    forgotPassword.Email = user.Email;
+                    forgotPassword.UserId = user.UserId;
+                    return forgotPassword;
+                }
+                else
+                {
+                    throw new Exception("user does not exist ");
+                }
+            }
+            else
+            {
+                throw new Exception("Invalid Email Provided ");
+            }
+        }
+
+        public bool ResetPassword(string Email, string Password)
+        { 
+            Email = Email.ToLower();
+            
+            var user = context.Users.FirstOrDefault(u=> u.Email == Email);
+            if (user == null)
+             return false;
+
+            user.Password = BCrypt.Net.BCrypt.HashPassword(Password);
+            user.ChangedAt = DateTime.Now;
+            context.SaveChanges();
+            return true;
+
         }
     }
 }

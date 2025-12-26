@@ -5,11 +5,11 @@ using MailKit.Net.Smtp;
 using MimeKit;
 using System.Text;
 using System.Threading.Tasks;
-using BusinessLogicLayer.Interfaces;
 using Microsoft.Extensions.Configuration;
 using MailKit.Security;
+using EmailService.Interfaces;
 
-namespace BusinessLogicLayer.Service
+namespace EmailService.Services
 {
    public  class EmailService :IEmailService
     {
