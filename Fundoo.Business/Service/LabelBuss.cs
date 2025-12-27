@@ -21,24 +21,39 @@ namespace BusinessLogicLayer.Service
             this.labelRepo = repo;
         }
 
-        public Label AddLabel(int notesId,int UserId, string labelName)
+        public Label CreateLabel(int UserId, string labelName)
         {
-            return labelRepo.AddLabel(notesId, UserId, labelName);
+            return labelRepo.CreateLabel( UserId, labelName);
         }
 
-        public Label FetchLabel(int notesId, int userId, string labelName)
+        public List<Label> FetchLabel(int userId)
         {
-            return labelRepo.FetchLabel(notesId, userId, labelName);
+            return labelRepo.FetchLabel(userId);
         }
 
-        public bool RemoveLabel(int notesId, int userId, string labelName)
+        public bool DeleteLabel( int userId, int labelId)
         {
-            return labelRepo.RemoveLabel(notesId, userId, labelName);
+            return labelRepo.DeleteLabel( userId, labelId);
         }
 
-        public Label RenameLabel(int notesId, int userId, string newLabelname, int labelId)
+        public Label UpdateLabel( int userId, int labelId, string newLabelname)
         {
-            return labelRepo.RenameLabel(notesId, userId, newLabelname,labelId);
+            return labelRepo.UpdateLabel( userId, labelId, newLabelname);
+        }
+
+        public bool AddLabelToNote(int userId, int labelId, int Notesid)
+        {
+            return labelRepo.AddLabelToNote(userId,labelId,Notesid);
+        }
+
+        public bool RemoveLabelFromNote(int userId, int labelId, int notesId)
+        {
+            return labelRepo.RemoveLabelFromNote( userId, labelId, notesId);
+        }
+
+        public List<Notes> GetNotesByLabel(int userId, int labelId)
+        {
+            return labelRepo.GetNotesByLabel(userId,labelId);
         }
     }
 }

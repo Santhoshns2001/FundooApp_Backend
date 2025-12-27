@@ -9,9 +9,13 @@ namespace DataAcessLayer.Interface
 {
     public interface ILabelRepo
     {
-        public Label AddLabel(int notesId, int userId, string labelName);
-        public Label FetchLabel(int notesId, int userId, string labelName);
-        public bool RemoveLabel(int notesId, int userId, string labelName);
-        public Label RenameLabel(int notesId, int userId, string newLabelname, int labelId);
+        public Label CreateLabel( int userId, string labelName);
+        public List<Label> FetchLabel(int userId);
+        public bool DeleteLabel( int userId, int labelId);
+        public Label UpdateLabel( int userId, int labelId, string newLabelname);
+        public bool AddLabelToNote(int userId, int labelId, int notesid);
+
+        public bool RemoveLabelFromNote(int userId, int labelId, int notesid);
+        public List<Notes> GetNotesByLabel(int userId, int labelId);
     }
 }

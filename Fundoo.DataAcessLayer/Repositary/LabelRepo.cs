@@ -23,69 +23,34 @@ namespace DataAcessLayer.Repositary
             this.configuration = config;
             this.notesRepo = notesRepo;
         }
-        public Label AddLabel(int notesId, int userId, string labelName)
+        public Label CreateLabel(int userId, string labelName)
         {
-            bool IsNotesPresent = GetNotesByID(notesId, userId);
+            if (string.IsNullOrWhiteSpace(labelName))
+                throw new Exception("Label name cannot be empty");
 
-            if (IsNotesPresent)
+            bool exists = _dbContext.Labels
+                .Any(l => l.UserId == userId && l.LabelName == labelName);
+
+            if (exists)
+                throw new Exception("Label already exists");
+
+            var label = new Label
             {
+                LabelName = labelName,
+                UserId = userId,
+                CreatedAt = DateTime.Now,
+                UpdatedAt = DateTime.Now
+            };
 
-                bool IsLabelIsPresent = _dbContext.Labels.Any(l => l.LabelName == labelName && l.UserId == userId && l.NotesId == notesId);
+            _dbContext.Labels.Add(label);
+            _dbContext.SaveChanges();
 
-                if (!IsLabelIsPresent)
-                {
-
-                    if (!string.IsNullOrEmpty(labelName))
-                    {
-                        Label label = new Label()
-                        {
-                            LabelName = labelName,
-                            NotesId = notesId,
-                            UserId = userId,
-                            CreatedAt = DateTime.Now,
-                            UpdatedAt = DateTime.Now,
-                        };
-                        _dbContext.Labels.Add(label);
-                        _dbContext.SaveChanges();
-                        return label;
-                    }
-                    else
-                    {
-                        throw new Exception("Label is Empty");
-                    }
-                }
-                else
-                {
-                    throw new Exception("Label is already present for the note ");
-                }
-            }
-            else
-            {
-                throw new Exception("No notes is present to add the label");
-            }
+            return label;
         }
 
-        public Label FetchLabel(int notesId, int userId, string labelName)
+        public List<Label> FetchLabel(int userId)
         {
-            bool IsNotesPresent = GetNotesByID(notesId, userId);
-
-            if (IsNotesPresent)
-            {
-                var label = _dbContext.Labels.Where(l => l.LabelName == labelName && l.UserId == userId && l.NotesId == notesId ).FirstOrDefault();
-                if (label != null)
-                {
-                    return label;
-                }
-                else
-                {
-                    throw new Exception("Label is not present");
-                }
-
-            }
-            else
-            {
-                throw new Exception("Notes is not present ");
-            }
+            return _dbContext.Labels.Where(l => l.UserId == userId).OrderBy(l => l.LabelName).ToList();
         }
 
         public bool GetNotesByID(int notesId, int userId)
@@ -93,49 +58,114 @@ namespace DataAcessLayer.Repositary
             return _dbContext.Notes.Any(n => n.NotesId == notesId && n.UserId == userId);
         }
 
-        public bool RemoveLabel(int notesId, int userId, string labelName)
+        public Label UpdateLabel(int userId, int labelId, string newLabelName)
         {
-            bool notes = GetNotesByID(notesId, userId);
+            if (string.IsNullOrWhiteSpace(newLabelName))
+                throw new Exception("Label name cannot be empty");
 
-            if (notes)
-            {
-                var label=_dbContext.Labels.Where(l=>l.NotesId==notesId &&  l.LabelName==labelName && l.UserId==userId).FirstOrDefault();
-
-                if(label != null)
-                {
-                    _dbContext.Labels.Remove(label);
-                    _dbContext.SaveChanges();
-                    return true;
-                }
-                else
-                {
-                   
-                    throw new Exception("Label not found");
-                }
-            }
-            else
-            {
-                throw new Exception("Notes Not Found");
-            }
-        }
-
-        public Label RenameLabel(int notesId, int userId, string newLabelname, int labelId)
-        {
-            var label = _dbContext.Labels.FirstOrDefault(l => l.LabelId == labelId && l.NotesId == notesId && l.UserId == userId);
+            var label = _dbContext.Labels
+                .FirstOrDefault(l => l.LabelId == labelId && l.UserId == userId);
 
             if (label == null)
                 throw new Exception("Label not found");
 
-            bool duplicateExists = _dbContext.Labels.Any(l =>l.UserId == userId && l.NotesId == notesId && l.LabelId != labelId && l.LabelName == newLabelname);
+            bool duplicate = _dbContext.Labels.Any(l =>
+                l.UserId == userId &&
+                l.LabelId != labelId &&
+                l.LabelName == newLabelName);
 
-            if (duplicateExists)
+            if (duplicate)
                 throw new Exception("Label name already exists");
 
-            label.LabelName = newLabelname;
+            label.LabelName = newLabelName;
             label.UpdatedAt = DateTime.Now;
 
             _dbContext.SaveChanges();
             return label;
         }
+
+        public bool DeleteLabel(int userId, int labelId)
+        {
+            var label = _dbContext.Labels
+                .FirstOrDefault(l => l.LabelId == labelId && l.UserId == userId);
+
+            if (label == null)
+                throw new Exception("Label not found");
+
+            var mappings = _dbContext.NoteLabels
+                .Where(nl => nl.LabelId == labelId)
+                .ToList();
+
+            _dbContext.NoteLabels.RemoveRange(mappings);
+            _dbContext.Labels.Remove(label);
+
+            _dbContext.SaveChanges();
+            return true;
+        }
+
+
+        public bool AddLabelToNote(int userId, int labelId, int noteId)
+        {
+            var note = _dbContext.Notes
+                .FirstOrDefault(n => n.NotesId == noteId && n.UserId == userId);
+
+            if (note == null)
+                throw new Exception("Note not found");
+
+            var label = _dbContext.Labels
+                .FirstOrDefault(l => l.LabelId == labelId && l.UserId == userId);
+
+            if (label == null)
+                throw new Exception("Label not found");
+
+            bool exists = _dbContext.NoteLabels.Any(nl =>
+                nl.NotesId == noteId && nl.LabelId == labelId);
+
+            if (exists)
+                throw new Exception("Label already added to this note");
+
+            var noteLabel = new NoteLabel
+            {
+                NotesId = noteId,
+                LabelId = labelId
+            };
+
+            _dbContext.NoteLabels.Add(noteLabel);
+            _dbContext.SaveChanges();
+
+            return true;
+        }
+
+        public bool RemoveLabelFromNote(int userId, int labelId, int noteId)
+        {
+            var note = _dbContext.Notes
+                .FirstOrDefault(n => n.NotesId == noteId && n.UserId == userId);
+
+            if (note == null)
+                throw new Exception("Note not found");
+
+            var noteLabel = _dbContext.NoteLabels
+                .FirstOrDefault(nl => nl.NotesId == noteId && nl.LabelId == labelId);
+
+            if (noteLabel == null)
+                throw new Exception("Label not associated with this note");
+
+            _dbContext.NoteLabels.Remove(noteLabel);
+            _dbContext.SaveChanges();
+
+            return true;
+        }
+
+        public List<Notes> GetNotesByLabel(int userId, int labelId)
+        {
+            var label = _dbContext.Labels.FirstOrDefault(l => l.LabelId == labelId && l.UserId == userId);
+
+            if (label == null)
+                throw new Exception("Label not found");
+
+            return _dbContext.NoteLabels.Where(nl => nl.LabelId == labelId).Select(nl => nl.Notes).Where(n => n.UserId == userId).ToList();
+        }
+
+
     }
 }

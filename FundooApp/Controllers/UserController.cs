@@ -1,4 +1,5 @@
-﻿using BusinessLogicLayer.Interfaces;
+﻿using System.Security.Claims;
+using BusinessLogicLayer.Interfaces;
 using DataAcessLayer.Data;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -83,7 +84,12 @@ namespace FundooApp.Controllers
         public IActionResult ResetPassword(string oldpassWord,string newPassword)
         {
 
-            string Email = User.FindFirst("Email").Value;
+            var userEmailClaim = User.FindFirst(ClaimTypes.Email);
+
+            if (userEmailClaim == null)
+                return Unauthorized("Invalid token");
+
+            string Email = userEmailClaim.Value;
 
             if (oldpassWord!=newPassword)
                 return BadRequest(new ResponseMdl<string>() { IsSuccuss = false, Message = "password and confirm password does not match", Data = "please check the password and confirm password " });

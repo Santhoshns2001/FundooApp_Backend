@@ -18,18 +18,18 @@ namespace ModalLayer.Entities
         public string LabelName { get; set; }
 
         public DateTime CreatedAt { get; set; }
-
         public DateTime UpdatedAt { get; set; }
 
-        public int NotesId { get; set; }
-
-
-        [ForeignKey("User")]
         public int UserId { get; set; }
 
         [JsonIgnore]
-        public virtual User User { get; set; }
+        public User User { get; set; }
 
-        public ICollection<Notes> NoteLabels { get; set; }
+        public ICollection<NoteLabel> NoteLabels { get; set; }
+
+        public Label()
+        {
+            NoteLabels = new HashSet<NoteLabel>();
+        }
     }
 }

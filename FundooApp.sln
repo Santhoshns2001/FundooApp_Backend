@@ -13,8 +13,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModalLayer", "Fundoo.Common
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailService", "EmailService\EmailService.csproj", "{ABB9C49F-4C41-4C0A-9462-E0B05AD8BC99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messaging", "Messaging\Messaging.csproj", "{FA908248-61FA-4A51-9161-FB9F5B3B5AEC}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,10 +39,6 @@ Global
 		{ABB9C49F-4C41-4C0A-9462-E0B05AD8BC99}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ABB9C49F-4C41-4C0A-9462-E0B05AD8BC99}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ABB9C49F-4C41-4C0A-9462-E0B05AD8BC99}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FA908248-61FA-4A51-9161-FB9F5B3B5AEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FA908248-61FA-4A51-9161-FB9F5B3B5AEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FA908248-61FA-4A51-9161-FB9F5B3B5AEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FA908248-61FA-4A51-9161-FB9F5B3B5AEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

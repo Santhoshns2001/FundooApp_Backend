@@ -34,8 +34,30 @@
         }
       }
     },
-    "/api/Collabarator/RemoveCollaborator": {
-      "post": {
+    "/api/Collabarator/GetCollaborator": {
+      "get": {
+        "tags": [
+          "Collabarator"
+        ],
+        "parameters": [
+          {
+            "name": "notesId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Collabarator/RemoveCollaboratorByEmail": {
+      "delete": {
         "tags": [
           "Collabarator"
         ],
@@ -49,6 +71,28 @@
           },
           {
             "name": "notesId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Collabarator/RemoveCollaborator": {
+      "delete": {
+        "tags": [
+          "Collabarator"
+        ],
+        "parameters": [
+          {
+            "name": "CollabId",
             "in": "query",
             "schema": {
               "type": "integer",
@@ -92,27 +136,10 @@
         }
       }
     },
-    "/api/Label/GetLabel": {
-      "put": {
+    "/api/Label/GetAllLabels": {
+      "get": {
         "tags": [
           "Label"
-        ],
-        "parameters": [
-          {
-            "name": "NotesId",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
-          {
-            "name": "LabelName",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          }
         ],
         "responses": {
           "200": {
@@ -121,25 +148,18 @@
         }
       }
     },
-    "/api/Label/RemoveLabel": {
+    "/api/Label/DeleteLabel": {
       "delete": {
         "tags": [
           "Label"
         ],
         "parameters": [
           {
-            "name": "NotesId",
+            "name": "LabelId",
             "in": "query",
             "schema": {
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "LabelName",
-            "in": "query",
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -150,7 +170,7 @@
         }
       }
     },
-    "/api/Label/Renamelabel": {
+    "/api/Label/UpdateLabel": {
       "put": {
         "tags": [
           "Label"
@@ -173,6 +193,88 @@
           },
           {
             "name": "LabelId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Label/AddLabelToNote": {
+      "post": {
+        "tags": [
+          "Label"
+        ],
+        "parameters": [
+          {
+            "name": "LabelId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "NotesId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Label/RemoveLabel": {
+      "delete": {
+        "tags": [
+          "Label"
+        ],
+        "parameters": [
+          {
+            "name": "LabelId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "NotesId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Label/GetNotesByLabel": {
+      "get": {
+        "tags": [
+          "Label"
+        ],
+        "parameters": [
+          {
+            "name": "labelId",
             "in": "query",
             "schema": {
               "type": "integer",

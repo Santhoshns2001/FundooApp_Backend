@@ -48,8 +48,34 @@ namespace FundooApp.Controllers
         }
 
         [Authorize]
-        [HttpPost]
-        [Route("RemoveCollaborator")]
+        [HttpGet]
+        [Route("GetCollaborator")]
+        public IActionResult GetCollaborator(int notesId)
+        {
+
+            var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+
+            if (userIdClaim == null)
+                return Unauthorized("Invalid token");
+
+            int userId = int.Parse(userIdClaim.Value);
+
+            List<Collaborator> collaborators = collabBuss.GetCollaborator( notesId, userId);
+
+            if (collaborators != null)
+            {
+                return Ok(new ResponseMdl<List<Collaborator>> { Data = collaborators, IsSuccuss = true, Message = "Collaborator Fetched" });
+            }
+            else
+            {
+                return BadRequest(new ResponseMdl<List<Collaborator>> { Data = collaborators, IsSuccuss = false, Message = "Unable to Add Collaborator" });
+            }
+        }
+
+
+        [Authorize]
+        [HttpDelete]
+        [Route("RemoveCollaboratorByEmail")]
         public IActionResult RemoveCollaborator(string Email, int notesId)
         {
 
@@ -71,5 +97,34 @@ namespace FundooApp.Controllers
                 return BadRequest(new ResponseMdl<bool> { Data = collaborator, IsSuccuss = false, Message = "Unable to remove Collaborator" });
             }
         }
+
+        [Authorize]
+        [HttpDelete]
+        [Route("RemoveCollaborator")]
+        public IActionResult RemoveCollaborator(int CollabId)
+        {
+
+            var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+
+            if (userIdClaim == null)
+                return Unauthorized("Invalid token");
+
+            int userId = int.Parse(userIdClaim.Value);
+
+            bool collaborator = collabBuss.RemoveCollaboratorByID(CollabId, userId);
+
+            if (collaborator)
+            {
+                return Ok(new ResponseMdl<bool> { Data = collaborator, IsSuccuss = true, Message = "Collaborator has been Removed " });
+            }
+            else
+            {
+                return BadRequest(new ResponseMdl<bool> { Data = collaborator, IsSuccuss = false, Message = "Unable to remove Collaborator" });
+            }
+        }
+
+
+
+
     }
 }

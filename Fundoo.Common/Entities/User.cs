@@ -21,9 +21,14 @@ namespace ModalLayer.Entities
         public DateTime Created { get; set; }
         public DateTime ChangedAt { get; set; }
 
-        public ICollection<Label> Labels { get; set; }
         public ICollection<Notes> Notes { get; set; }
+        public ICollection<Label> Labels { get; set; }
 
+        public User()
+        {
+            Notes = new HashSet<Notes>();
+            Labels = new HashSet<Label>();
+        }   
 
     }
 }

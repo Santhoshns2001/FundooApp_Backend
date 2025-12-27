@@ -33,6 +33,11 @@ namespace ModalLayer.Entities
         [JsonIgnore]
         public User User { get; set; }
 
-        public ICollection<Label> Labels { get; set; }
+        public ICollection<NoteLabel> NoteLabels { get; set; }
+
+        public Notes()
+        {
+            NoteLabels = new HashSet<NoteLabel>();
+        }
     }
 }

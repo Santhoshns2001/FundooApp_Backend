@@ -22,6 +22,39 @@ namespace DataAcessLayer.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("ModalLayer.Entities.Collaborator", b =>
+                {
+                    b.Property<int>("CollaboratorId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CollaboratorId"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("NotesId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("CollaboratorId");
+
+                    b.HasIndex("NotesId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Collaborators");
+                });
+
             modelBuilder.Entity("ModalLayer.Entities.Label", b =>
                 {
                     b.Property<int>("LabelId")
@@ -37,9 +70,6 @@ namespace DataAcessLayer.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("NotesId")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("datetime2");
 
@@ -48,11 +78,33 @@ namespace DataAcessLayer.Migrations
 
                     b.HasKey("LabelId");
 
-                    b.HasIndex("NotesId");
-
                     b.HasIndex("UserId");
 
                     b.ToTable("Labels");
+                });
+
+            modelBuilder.Entity("ModalLayer.Entities.NoteLabel", b =>
+                {
+                    b.Property<int>("NoteLabelId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("NoteLabelId"));
+
+                    b.Property<int>("LabelId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("NotesId")
+                        .HasColumnType("int");
+
+                    b.HasKey("NoteLabelId");
+
+                    b.HasIndex("LabelId");
+
+                    b.HasIndex("NotesId", "LabelId")
+                        .IsUnique();
+
+                    b.ToTable("NoteLabels");
                 });
 
             modelBuilder.Entity("ModalLayer.Entities.Notes", b =>
@@ -138,7 +190,7 @@ namespace DataAcessLayer.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("ModalLayer.Entities.Label", b =>
+            modelBuilder.Entity("ModalLayer.Entities.Collaborator", b =>
                 {
                     b.HasOne("ModalLayer.Entities.Notes", "Notes")
                         .WithMany()
@@ -149,7 +201,7 @@ namespace DataAcessLayer.Migrations
                     b.HasOne("ModalLayer.Entities.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("Notes");
@@ -157,15 +209,62 @@ namespace DataAcessLayer.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("ModalLayer.Entities.Label", b =>
+                {
+                    b.HasOne("ModalLayer.Entities.User", "User")
+                        .WithMany("Labels")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("ModalLayer.Entities.NoteLabel", b =>
+                {
+                    b.HasOne("ModalLayer.Entities.Label", "Label")
+                        .WithMany("NoteLabels")
+                        .HasForeignKey("LabelId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ModalLayer.Entities.Notes", "Notes")
+                        .WithMany("NoteLabels")
+                        .HasForeignKey("NotesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Label");
+
+                    b.Navigation("Notes");
+                });
+
             modelBuilder.Entity("ModalLayer.Entities.Notes", b =>
                 {
-                    b.HasOne("ModalLayer.Entities.User", "NotesUser")
-                        .WithMany()
+                    b.HasOne("ModalLayer.Entities.User", "User")
+                        .WithMany("Notes")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("NotesUser");
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("ModalLayer.Entities.Label", b =>
+                {
+                    b.Navigation("NoteLabels");
+                });
+
+            modelBuilder.Entity("ModalLayer.Entities.Notes", b =>
+                {
+                    b.Navigation("NoteLabels");
+                });
+
+            modelBuilder.Entity("ModalLayer.Entities.User", b =>
+                {
+                    b.Navigation("Labels");
+
+                    b.Navigation("Notes");
                 });
 #pragma warning restore 612, 618
         }

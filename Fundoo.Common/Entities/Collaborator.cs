@@ -14,22 +14,20 @@ namespace ModalLayer.Entities
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int  CollaboratorId { get; set; }
+        public int CollaboratorId { get; set; }
 
+        [Required]
         public string Email { get; set; }
 
-        [ForeignKey("Notes")]
         public int NotesId { get; set; }
 
-        public int UserId { get; set; }
-
         [JsonIgnore]
-        public virtual Notes Notes { get; set; }
+        public Notes Notes { get; set; }
 
-        public virtual User User { get; set; }
+        public int UserId { get; set; }
+        public User User { get; set; }
 
         public DateTime CreatedAt { get; set; }
-
-        public DateTime LastUpdatedAt { get; set; }
+        public DateTime UpdatedAt { get; set; }
     }
 }

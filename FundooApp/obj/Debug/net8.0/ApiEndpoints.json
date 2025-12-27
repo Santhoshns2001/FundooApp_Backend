@@ -22,9 +22,41 @@
   },
   {
     "ContainingType": "FundooApp.Controllers.CollabaratorController",
+    "Method": "GetCollaborator",
+    "RelativePath": "api/Collabarator/GetCollaborator",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "notesId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FundooApp.Controllers.CollabaratorController",
     "Method": "RemoveCollaborator",
     "RelativePath": "api/Collabarator/RemoveCollaborator",
-    "HttpMethod": "POST",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CollabId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FundooApp.Controllers.CollabaratorController",
+    "Method": "RemoveCollaborator",
+    "RelativePath": "api/Collabarator/RemoveCollaboratorByEmail",
+    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -43,7 +75,7 @@
   },
   {
     "ContainingType": "FundooApp.Controllers.LabelController",
-    "Method": "AddLabel",
+    "Method": "CreateLabel",
     "RelativePath": "api/Label/addLabel",
     "HttpMethod": "POST",
     "IsController": true,
@@ -64,20 +96,20 @@
   },
   {
     "ContainingType": "FundooApp.Controllers.LabelController",
-    "Method": "FetchLabel",
-    "RelativePath": "api/Label/GetLabel",
-    "HttpMethod": "PUT",
+    "Method": "AddLabelToNote",
+    "RelativePath": "api/Label/AddLabelToNote",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "NotesId",
+        "Name": "LabelId",
         "Type": "System.Int32",
         "IsRequired": false
       },
       {
-        "Name": "LabelName",
-        "Type": "System.String",
+        "Name": "NotesId",
+        "Type": "System.Int32",
         "IsRequired": false
       }
     ],
@@ -85,20 +117,62 @@
   },
   {
     "ContainingType": "FundooApp.Controllers.LabelController",
-    "Method": "RemoveLabel",
+    "Method": "DeleteLabel",
+    "RelativePath": "api/Label/DeleteLabel",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "LabelId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FundooApp.Controllers.LabelController",
+    "Method": "FetchLabel",
+    "RelativePath": "api/Label/GetAllLabels",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FundooApp.Controllers.LabelController",
+    "Method": "GetNotesByLabel",
+    "RelativePath": "api/Label/GetNotesByLabel",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "labelId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FundooApp.Controllers.LabelController",
+    "Method": "RemoveLabelFromNote",
     "RelativePath": "api/Label/RemoveLabel",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "NotesId",
+        "Name": "LabelId",
         "Type": "System.Int32",
         "IsRequired": false
       },
       {
-        "Name": "LabelName",
-        "Type": "System.String",
+        "Name": "NotesId",
+        "Type": "System.Int32",
         "IsRequired": false
       }
     ],
@@ -106,8 +180,8 @@
   },
   {
     "ContainingType": "FundooApp.Controllers.LabelController",
-    "Method": "RenameLabel",
-    "RelativePath": "api/Label/Renamelabel",
+    "Method": "UpdateLabel",
+    "RelativePath": "api/Label/UpdateLabel",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,

@@ -3,24 +3,56 @@
   "WorkspaceRootPath": "D:\\Projects\\FundooNotes\\FundooApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B5AFF7DE-C510-46CC-B3F1-25FBE06886E4}|FundooApp\\FundooApp.csproj|d:\\projects\\fundoonotes\\fundooapp\\fundooapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5AFF7DE-C510-46CC-B3F1-25FBE06886E4}|FundooApp\\FundooApp.csproj|solutionrelative:fundooapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABB9C49F-4C41-4C0A-9462-E0B05AD8BC99}|EmailService\\EmailService.csproj|d:\\projects\\fundoonotes\\fundooapp\\emailservice\\consumers\\forgotpasswordconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABB9C49F-4C41-4C0A-9462-E0B05AD8BC99}|EmailService\\EmailService.csproj|solutionrelative:emailservice\\consumers\\forgotpasswordconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDAE7D98-77CE-419C-B031-0813327E1993}|Fundoo.Business\\BusinessLogicLayer.csproj|d:\\projects\\fundoonotes\\fundooapp\\fundoo.business\\service\\rabbitmqproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDAE7D98-77CE-419C-B031-0813327E1993}|Fundoo.Business\\BusinessLogicLayer.csproj|solutionrelative:fundoo.business\\service\\rabbitmqproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BDAE7D98-77CE-419C-B031-0813327E1993}|Fundoo.Business\\BusinessLogicLayer.csproj|d:\\projects\\fundoonotes\\fundooapp\\fundoo.business\\service\\userbuss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BDAE7D98-77CE-419C-B031-0813327E1993}|Fundoo.Business\\BusinessLogicLayer.csproj|solutionrelative:fundoo.business\\service\\userbuss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{BDAE7D98-77CE-419C-B031-0813327E1993}|Fundoo.Business\\BusinessLogicLayer.csproj|d:\\projects\\fundoonotes\\fundooapp\\fundoo.business\\interfaces\\iuserregisterbuss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDAE7D98-77CE-419C-B031-0813327E1993}|Fundoo.Business\\BusinessLogicLayer.csproj|solutionrelative:fundoo.business\\interfaces\\iuserregisterbuss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B5AFF7DE-C510-46CC-B3F1-25FBE06886E4}|FundooApp\\FundooApp.csproj|d:\\projects\\fundoonotes\\fundooapp\\fundooapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B5AFF7DE-C510-46CC-B3F1-25FBE06886E4}|FundooApp\\FundooApp.csproj|solutionrelative:fundooapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5AFF7DE-C510-46CC-B3F1-25FBE06886E4}|FundooApp\\FundooApp.csproj|d:\\projects\\fundoonotes\\fundooapp\\fundooapp\\controllers\\collabaratorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5AFF7DE-C510-46CC-B3F1-25FBE06886E4}|FundooApp\\FundooApp.csproj|solutionrelative:fundooapp\\controllers\\collabaratorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{275EB1C3-21E2-4E63-AAB4-E34A72836796}|Fundoo.Common\\ModalLayer.csproj|d:\\projects\\fundoonotes\\fundooapp\\fundoo.common\\entities\\notes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{275EB1C3-21E2-4E63-AAB4-E34A72836796}|Fundoo.Common\\ModalLayer.csproj|solutionrelative:fundoo.common\\entities\\notes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{275EB1C3-21E2-4E63-AAB4-E34A72836796}|Fundoo.Common\\ModalLayer.csproj|d:\\projects\\fundoonotes\\fundooapp\\fundoo.common\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{275EB1C3-21E2-4E63-AAB4-E34A72836796}|Fundoo.Common\\ModalLayer.csproj|solutionrelative:fundoo.common\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5AFF7DE-C510-46CC-B3F1-25FBE06886E4}|FundooApp\\FundooApp.csproj|d:\\projects\\fundoonotes\\fundooapp\\fundooapp\\controllers\\notescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5AFF7DE-C510-46CC-B3F1-25FBE06886E4}|FundooApp\\FundooApp.csproj|solutionrelative:fundooapp\\controllers\\notescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEC1E4CC-0AE9-4F4A-B26A-584EE4960C8C}|Fundoo.DataAcessLayer\\DataAcessLayer.csproj|d:\\projects\\fundoonotes\\fundooapp\\fundoo.dataacesslayer\\repositary\\notesrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEC1E4CC-0AE9-4F4A-B26A-584EE4960C8C}|Fundoo.DataAcessLayer\\DataAcessLayer.csproj|solutionrelative:fundoo.dataacesslayer\\repositary\\notesrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDAE7D98-77CE-419C-B031-0813327E1993}|Fundoo.Business\\BusinessLogicLayer.csproj|d:\\projects\\fundoonotes\\fundooapp\\fundoo.business\\service\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDAE7D98-77CE-419C-B031-0813327E1993}|Fundoo.Business\\BusinessLogicLayer.csproj|solutionrelative:fundoo.business\\service\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEC1E4CC-0AE9-4F4A-B26A-584EE4960C8C}|Fundoo.DataAcessLayer\\DataAcessLayer.csproj|d:\\projects\\fundoonotes\\fundooapp\\fundoo.dataacesslayer\\repositary\\labelrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEC1E4CC-0AE9-4F4A-B26A-584EE4960C8C}|Fundoo.DataAcessLayer\\DataAcessLayer.csproj|solutionrelative:fundoo.dataacesslayer\\repositary\\labelrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Projects\\FundooNotes\\FundooApp\\Fundoo.DataAcessLayer\\Migrations\\20251227052408_AddedUpdatedEntities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Fundoo.DataAcessLayer\\Migrations\\20251227052408_AddedUpdatedEntities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEC1E4CC-0AE9-4F4A-B26A-584EE4960C8C}|Fundoo.DataAcessLayer\\DataAcessLayer.csproj|d:\\projects\\fundoonotes\\fundooapp\\fundoo.dataacesslayer\\data\\fundoodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEC1E4CC-0AE9-4F4A-B26A-584EE4960C8C}|Fundoo.DataAcessLayer\\DataAcessLayer.csproj|solutionrelative:fundoo.dataacesslayer\\data\\fundoodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Projects\\FundooNotes\\FundooApp\\Fundoo.DataAcessLayer\\Migrations\\20251227050258_AddedEntities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Fundoo.DataAcessLayer\\Migrations\\20251227050258_AddedEntities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,71 +62,175 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "UserBuss.cs",
               "DocumentMoniker": "D:\\Projects\\FundooNotes\\FundooApp\\Fundoo.Business\\Service\\UserBuss.cs",
               "RelativeDocumentMoniker": "Fundoo.Business\\Service\\UserBuss.cs",
               "ToolTip": "D:\\Projects\\FundooNotes\\FundooApp\\Fundoo.Business\\Service\\UserBuss.cs",
               "RelativeToolTip": "Fundoo.Business\\Service\\UserBuss.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAcwEYAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwB8AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-26T11:12:09.967Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\Projects\\FundooNotes\\FundooApp\\FundooApp\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "FundooApp\\Controllers\\UserController.cs",
-              "ToolTip": "D:\\Projects\\FundooNotes\\FundooApp\\FundooApp\\Controllers\\UserController.cs",
-              "RelativeToolTip": "FundooApp\\Controllers\\UserController.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAgwEIAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-26T10:56:39.649Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RabbitMqProducer.cs",
-              "DocumentMoniker": "D:\\Projects\\FundooNotes\\FundooApp\\Fundoo.Business\\Service\\RabbitMqProducer.cs",
-              "RelativeDocumentMoniker": "Fundoo.Business\\Service\\RabbitMqProducer.cs",
-              "ToolTip": "D:\\Projects\\FundooNotes\\FundooApp\\Fundoo.Business\\Service\\RabbitMqProducer.cs",
-              "RelativeToolTip": "Fundoo.Business\\Service\\RabbitMqProducer.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAcwDAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-26T10:50:21.293Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Projects\\FundooNotes\\FundooApp\\FundooApp\\Program.cs",
-              "RelativeDocumentMoniker": "FundooApp\\Program.cs",
-              "ToolTip": "D:\\Projects\\FundooNotes\\FundooApp\\FundooApp\\Program.cs",
-              "RelativeToolTip": "FundooApp\\Program.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAowEkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-26T10:47:16.017Z",
+              "WhenOpened": "2025-12-27T06:54:39.307Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ForgotPasswordConsumer.cs",
-              "DocumentMoniker": "D:\\Projects\\FundooNotes\\FundooApp\\EmailService\\Consumers\\ForgotPasswordConsumer.cs",
-              "RelativeDocumentMoniker": "EmailService\\Consumers\\ForgotPasswordConsumer.cs",
-              "ToolTip": "D:\\Projects\\FundooNotes\\FundooApp\\EmailService\\Consumers\\ForgotPasswordConsumer.cs",
-              "RelativeToolTip": "EmailService\\Consumers\\ForgotPasswordConsumer.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAYwEsAAAAFAAAAAAAAAA==",
+              "Title": "IUserRegisterBuss.cs",
+              "DocumentMoniker": "D:\\Projects\\FundooNotes\\FundooApp\\Fundoo.Business\\Interfaces\\IUserRegisterBuss.cs",
+              "RelativeDocumentMoniker": "Fundoo.Business\\Interfaces\\IUserRegisterBuss.cs",
+              "ToolTip": "D:\\Projects\\FundooNotes\\FundooApp\\Fundoo.Business\\Interfaces\\IUserRegisterBuss.cs",
+              "RelativeToolTip": "Fundoo.Business\\Interfaces\\IUserRegisterBuss.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAEwA8AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-26T10:43:16.937Z",
+              "WhenOpened": "2025-12-27T06:54:27.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Notes.cs",
+              "DocumentMoniker": "D:\\Projects\\FundooNotes\\FundooApp\\Fundoo.Common\\Entities\\Notes.cs",
+              "RelativeDocumentMoniker": "Fundoo.Common\\Entities\\Notes.cs",
+              "ToolTip": "D:\\Projects\\FundooNotes\\FundooApp\\Fundoo.Common\\Entities\\Notes.cs",
+              "RelativeToolTip": "Fundoo.Common\\Entities\\Notes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T06:34:06.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\Projects\\FundooNotes\\FundooApp\\FundooApp\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "FundooApp\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\Projects\\FundooNotes\\FundooApp\\FundooApp\\Controllers\\UserController.cs",
+              "RelativeToolTip": "FundooApp\\Controllers\\UserController.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAewDEAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T06:01:29.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "JwtService.cs",
+              "DocumentMoniker": "D:\\Projects\\FundooNotes\\FundooApp\\Fundoo.Business\\Service\\JwtService.cs",
+              "RelativeDocumentMoniker": "Fundoo.Business\\Service\\JwtService.cs",
+              "ToolTip": "D:\\Projects\\FundooNotes\\FundooApp\\Fundoo.Business\\Service\\JwtService.cs",
+              "RelativeToolTip": "Fundoo.Business\\Service\\JwtService.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwCoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T05:56:19.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CollabaratorController.cs",
+              "DocumentMoniker": "D:\\Projects\\FundooNotes\\FundooApp\\FundooApp\\Controllers\\CollabaratorController.cs",
+              "RelativeDocumentMoniker": "FundooApp\\Controllers\\CollabaratorController.cs",
+              "ToolTip": "D:\\Projects\\FundooNotes\\FundooApp\\FundooApp\\Controllers\\CollabaratorController.cs",
+              "RelativeToolTip": "FundooApp\\Controllers\\CollabaratorController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T05:53:19.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NotesRepo.cs",
+              "DocumentMoniker": "D:\\Projects\\FundooNotes\\FundooApp\\Fundoo.DataAcessLayer\\Repositary\\NotesRepo.cs",
+              "RelativeDocumentMoniker": "Fundoo.DataAcessLayer\\Repositary\\NotesRepo.cs",
+              "ToolTip": "D:\\Projects\\FundooNotes\\FundooApp\\Fundoo.DataAcessLayer\\Repositary\\NotesRepo.cs",
+              "RelativeToolTip": "Fundoo.DataAcessLayer\\Repositary\\NotesRepo.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAgwBkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T05:34:06.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Projects\\FundooNotes\\FundooApp\\Fundoo.Common\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Fundoo.Common\\Entities\\User.cs",
+              "ToolTip": "D:\\Projects\\FundooNotes\\FundooApp\\Fundoo.Common\\Entities\\User.cs",
+              "RelativeToolTip": "Fundoo.Common\\Entities\\User.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwAoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T05:30:05.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NotesController.cs",
+              "DocumentMoniker": "D:\\Projects\\FundooNotes\\FundooApp\\FundooApp\\Controllers\\NotesController.cs",
+              "RelativeDocumentMoniker": "FundooApp\\Controllers\\NotesController.cs",
+              "ToolTip": "D:\\Projects\\FundooNotes\\FundooApp\\FundooApp\\Controllers\\NotesController.cs",
+              "RelativeToolTip": "FundooApp\\Controllers\\NotesController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAMwCMAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T05:25:42.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20251227052408_AddedUpdatedEntities.cs",
+              "DocumentMoniker": "D:\\Projects\\FundooNotes\\FundooApp\\Fundoo.DataAcessLayer\\Migrations\\20251227052408_AddedUpdatedEntities.cs",
+              "RelativeDocumentMoniker": "Fundoo.DataAcessLayer\\Migrations\\20251227052408_AddedUpdatedEntities.cs",
+              "ToolTip": "D:\\Projects\\FundooNotes\\FundooApp\\Fundoo.DataAcessLayer\\Migrations\\20251227052408_AddedUpdatedEntities.cs",
+              "RelativeToolTip": "Fundoo.DataAcessLayer\\Migrations\\20251227052408_AddedUpdatedEntities.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAQwA4AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T05:24:08.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "20251227050258_AddedEntities.cs",
+              "DocumentMoniker": "D:\\Projects\\FundooNotes\\FundooApp\\Fundoo.DataAcessLayer\\Migrations\\20251227050258_AddedEntities.cs",
+              "RelativeDocumentMoniker": "Fundoo.DataAcessLayer\\Migrations\\20251227050258_AddedEntities.cs",
+              "ToolTip": "D:\\Projects\\FundooNotes\\FundooApp\\Fundoo.DataAcessLayer\\Migrations\\20251227050258_AddedEntities.cs",
+              "RelativeToolTip": "Fundoo.DataAcessLayer\\Migrations\\20251227050258_AddedEntities.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T05:02:58.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FundooDBContext.cs",
+              "DocumentMoniker": "D:\\Projects\\FundooNotes\\FundooApp\\Fundoo.DataAcessLayer\\Data\\FundooDBContext.cs",
+              "RelativeDocumentMoniker": "Fundoo.DataAcessLayer\\Data\\FundooDBContext.cs",
+              "ToolTip": "D:\\Projects\\FundooNotes\\FundooApp\\Fundoo.DataAcessLayer\\Data\\FundooDBContext.cs",
+              "RelativeToolTip": "Fundoo.DataAcessLayer\\Data\\FundooDBContext.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAowEsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T05:01:14.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LabelRepo.cs",
+              "DocumentMoniker": "D:\\Projects\\FundooNotes\\FundooApp\\Fundoo.DataAcessLayer\\Repositary\\LabelRepo.cs",
+              "RelativeDocumentMoniker": "Fundoo.DataAcessLayer\\Repositary\\LabelRepo.cs",
+              "ToolTip": "D:\\Projects\\FundooNotes\\FundooApp\\Fundoo.DataAcessLayer\\Repositary\\LabelRepo.cs",
+              "RelativeToolTip": "Fundoo.DataAcessLayer\\Repositary\\LabelRepo.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAtwKYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T04:59:34.503Z",
               "EditorCaption": ""
             }
           ]

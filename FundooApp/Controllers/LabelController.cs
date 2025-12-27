@@ -22,7 +22,7 @@ namespace FundooApp.Controllers
         [HttpPost]
         [Authorize]
         [Route("addLabel")]
-        public IActionResult AddLabel(int NotesId, string LabelName)
+        public IActionResult CreateLabel(int NotesId, string LabelName)
         {
             var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
 
@@ -31,7 +31,7 @@ namespace FundooApp.Controllers
 
             int userId = int.Parse(userIdClaim.Value);
 
-            Label label=labelBuss.AddLabel(NotesId,userId, LabelName);
+            Label label=labelBuss.CreateLabel(userId, LabelName);
 
             if (label != null)
             {
@@ -43,11 +43,9 @@ namespace FundooApp.Controllers
             }
         }
 
-
-        [HttpPut]
         [Authorize]
-        [Route("GetLabel")]
-        public IActionResult FetchLabel(int NotesId, string LabelName)
+        [HttpGet("GetAllLabels")]
+        public IActionResult FetchLabel()
         {
             var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
 
@@ -56,22 +54,22 @@ namespace FundooApp.Controllers
 
             int userId = int.Parse(userIdClaim.Value);
 
-            Label label = labelBuss.FetchLabel(NotesId, userId, LabelName);
+            List<Label> label = labelBuss.FetchLabel( userId);
 
             if (label != null)
             {
-                return Ok(new ResponseMdl<Label> { IsSuccuss = true, Data = label, Message = "Label fetched successfully" });
+                return Ok(new ResponseMdl<List<Label>> { IsSuccuss = true, Data = label, Message = "Label fetched successfully" });
             }
             else
             {
-                return BadRequest(new ResponseMdl<Label> { IsSuccuss = false, Data = label, Message = "Failed to fetch label" });
+                return BadRequest(new ResponseMdl<List<Label>> { IsSuccuss = false, Data = label, Message = "Failed to fetch label" });
             }
         }
 
         [HttpDelete]
         [Authorize]
-        [Route("RemoveLabel")]
-        public IActionResult RemoveLabel(int NotesId, string LabelName)
+        [Route("DeleteLabel")]
+        public IActionResult DeleteLabel(int LabelId)
         {
             var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
 
@@ -80,7 +78,7 @@ namespace FundooApp.Controllers
 
             int userId = int.Parse(userIdClaim.Value);
 
-            bool label = labelBuss.RemoveLabel(NotesId, userId, LabelName);
+            bool label = labelBuss.DeleteLabel( userId, LabelId);
 
             if (label)
             {
@@ -95,8 +93,8 @@ namespace FundooApp.Controllers
 
         [HttpPut]
         [Authorize]
-        [Route("Renamelabel")]
-        public IActionResult RenameLabel(int NotesId, string NewLabelname,int LabelId)
+        [Route("UpdateLabel")]
+        public IActionResult UpdateLabel(int NotesId, string NewLabelname,int LabelId)
         {
             var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
 
@@ -105,7 +103,7 @@ namespace FundooApp.Controllers
 
             int userId = int.Parse(userIdClaim.Value);
 
-            Label label = labelBuss.RenameLabel(NotesId, userId, NewLabelname,LabelId);
+            Label label = labelBuss.UpdateLabel(userId, LabelId, NewLabelname);
 
             if (label!=null)
             {
@@ -116,5 +114,78 @@ namespace FundooApp.Controllers
                 return BadRequest(new ResponseMdl<Label> { IsSuccuss = false, Data = label, Message = "Label removal has been failed " });
             }
         }
+
+        [HttpPost]
+        [Authorize]
+        [Route("AddLabelToNote")]
+        public IActionResult AddLabelToNote(int LabelId,int NotesId)
+        {
+            var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+
+            if (userIdClaim == null)
+                return Unauthorized("Invalid token");
+
+            int userId = int.Parse(userIdClaim.Value);
+
+            bool label = labelBuss.AddLabelToNote(userId, LabelId, NotesId);
+
+            if (label)
+            {
+                return Ok(new ResponseMdl<bool> { IsSuccuss = true, Data = label, Message = "label added to note successfully " });
+            }
+            else
+            {
+                return BadRequest(new ResponseMdl<bool> { IsSuccuss = false, Data = label, Message = "Label added has been failed " });
+            }
+        }
+
+        [HttpDelete]
+        [Authorize]
+        [Route("RemoveLabel")]
+        public IActionResult RemoveLabelFromNote(int LabelId, int NotesId)
+        {
+            var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+
+            if (userIdClaim == null)
+                return Unauthorized("Invalid token");
+
+            int userId = int.Parse(userIdClaim.Value);
+
+            bool label = labelBuss.RemoveLabelFromNote(userId, LabelId, NotesId);
+
+            if (label)
+            {
+                return Ok(new ResponseMdl<bool> { IsSuccuss = true, Data = label, Message = "label added to note successfully " });
+            }
+            else
+            {
+                return BadRequest(new ResponseMdl<bool> { IsSuccuss = false, Data = label, Message = "Label added has been failed " });
+            }
+        }
+
+
+        [Authorize]
+        [HttpGet("GetNotesByLabel")]
+        public IActionResult GetNotesByLabel(int labelId)
+        {
+            var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+
+            if (userIdClaim == null)
+                return Unauthorized("Invalid token");
+
+            int userId = int.Parse(userIdClaim.Value);
+
+            List<Notes> label = labelBuss.GetNotesByLabel(userId,labelId);
+
+            if (label != null)
+            {
+                return Ok(new ResponseMdl<List<Notes>> { IsSuccuss = true, Data = label, Message = "Notes fetched successfully" });
+            }
+            else
+            {
+                return BadRequest(new ResponseMdl<List<Notes>> { IsSuccuss = false, Data = label, Message = "Failed to fetch Notes" });
+            }
+        }
+
     }
 }
