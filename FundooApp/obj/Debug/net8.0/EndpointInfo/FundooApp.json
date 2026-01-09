@@ -655,14 +655,14 @@
         ],
         "parameters": [
           {
-            "name": "oldpassWord",
+            "name": "newPassword",
             "in": "query",
             "schema": {
               "type": "string"
             }
           },
           {
-            "name": "newPassword",
+            "name": "confirmPassword",
             "in": "query",
             "schema": {
               "type": "string"

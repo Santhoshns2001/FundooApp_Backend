@@ -1,0 +1,42 @@
+2026-01-09 12:26:50.834 +05:30 [INF] User profile is available. Using 'C:\Users\nssan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-09 12:26:52.326 +05:30 [INF] Now listening on: https://localhost:7224
+2026-01-09 12:26:52.338 +05:30 [INF] Now listening on: http://localhost:5285
+2026-01-09 12:26:52.434 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-09 12:26:52.439 +05:30 [INF] Hosting environment: Development
+2026-01-09 12:26:52.452 +05:30 [INF] Content root path: D:\Projects\FundooApp\FundooApp\FundooApp
+2026-01-09 12:26:53.140 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger - null null
+2026-01-09 12:26:53.364 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger - 301 0 null 224.6561ms
+2026-01-09 12:26:53.371 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - null null
+2026-01-09 12:26:53.514 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - 200 null text/html;charset=utf-8 142.231ms
+2026-01-09 12:26:53.520 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/swagger-ui.css - null null
+2026-01-09 12:26:53.520 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/swagger-ui-bundle.js - null null
+2026-01-09 12:26:53.520 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/swagger-ui-standalone-preset.js - null null
+2026-01-09 12:26:53.520 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-09 12:26:53.522 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2026-01-09 12:26:53.605 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2026-01-09 12:26:53.652 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2026-01-09 12:26:53.655 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2026-01-09 12:26:53.684 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16503 application/javascript; charset=utf-8 163.2836ms
+2026-01-09 12:26:53.717 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/swagger-ui.css - 200 152034 text/css 197.2721ms
+2026-01-09 12:26:53.729 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 209.0994ms
+2026-01-09 12:26:53.748 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 227.848ms
+2026-01-09 12:26:53.762 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 239.5608ms
+2026-01-09 12:26:53.884 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2026-01-09 12:26:53.899 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/favicon-32x32.png - null null
+2026-01-09 12:26:53.987 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 103.6233ms
+2026-01-09 12:26:54.000 +05:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-01-09 12:26:54.034 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/favicon-32x32.png - 200 628 image/png 134.972ms
+2026-01-09 16:01:47.181 +05:30 [INF] User profile is available. Using 'C:\Users\nssan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-09 16:01:48.156 +05:30 [INF] Now listening on: https://localhost:7224
+2026-01-09 16:01:48.169 +05:30 [INF] Now listening on: http://localhost:5285
+2026-01-09 16:01:48.542 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-09 16:01:48.545 +05:30 [INF] Hosting environment: Development
+2026-01-09 16:01:48.548 +05:30 [INF] Content root path: D:\Projects\FundooApp\FundooApp\FundooApp
+2026-01-09 16:01:48.805 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - null null
+2026-01-09 16:01:49.073 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-09 16:01:49.073 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2026-01-09 16:01:49.074 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - 200 null text/html;charset=utf-8 279.6809ms
+2026-01-09 16:01:49.086 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16503 application/javascript; charset=utf-8 12.9266ms
+2026-01-09 16:01:49.131 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 58.1375ms
+2026-01-09 16:01:49.201 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2026-01-09 16:01:49.223 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 23.0157ms

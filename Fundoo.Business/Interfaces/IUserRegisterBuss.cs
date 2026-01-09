@@ -12,9 +12,7 @@ namespace BusinessLogicLayer.Interfaces
    public interface IUserRegisterBuss
     {
         public Task<User> RegisterUser(UserRegisterDTO request); 
-
         public string LoginUser(LoginDTO loginDTO);
-
         public bool ForgotPassword(string Email);
         public bool ResetPassword(string email,string password);
     }

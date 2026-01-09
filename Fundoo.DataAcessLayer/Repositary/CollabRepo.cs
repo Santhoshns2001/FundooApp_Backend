@@ -20,23 +20,17 @@ namespace DataAcessLayer.Repositary
         {
             email = email.ToLower();
 
-            // 1. Check note ownership
             var note = dBContext.Notes
                 .FirstOrDefault(n => n.NotesId == notesId && n.UserId == userId);
 
             if (note == null)
                 throw new Exception("Note not found");
 
-            // 2. Prevent duplicate collaborator
-            bool exists = dBContext.Collaborators.Any(c =>
-                c.Email == email &&
-                c.NotesId == notesId &&
-                c.UserId == userId);
+            bool exists = dBContext.Collaborators.Any(c => c.Email == email &&c. NotesId == notesId && c.UserId == userId);
 
             if (exists)
                 throw new Exception("Collaborator already exists");
 
-            // 3. Add collaborator
             var collaborator = new Collaborator
             {
                 Email = email,
@@ -55,15 +49,12 @@ namespace DataAcessLayer.Repositary
 
         public List<Collaborator> GetCollaborator(int notesId, int userId)
         {
-            bool noteExists = dBContext.Notes
-                .Any(n => n.NotesId == notesId && n.UserId == userId);
+            bool noteExists = dBContext.Notes.Any(n => n.NotesId == notesId && n.UserId == userId);
 
             if (!noteExists)
                 throw new Exception("Note not found");
 
-            return dBContext.Collaborators
-                .Where(c => c.NotesId == notesId && c.UserId == userId)
-                .ToList();
+            return dBContext.Collaborators .Where(c => c.NotesId == notesId && c.UserId == userId) .ToList();
         }
 
         public bool RemoveCollaborator(string email, int notesId, int userId)

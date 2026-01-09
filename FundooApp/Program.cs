@@ -12,8 +12,24 @@ using Microsoft.OpenApi.Models;
 using Newtonsoft.Json;
 using EmailService.Services;
 using EmailService.Consumers;
+using Serilog;
+using FundooApp.MiddleWare;
 
 var builder = WebApplication.CreateBuilder(args);
+
+//  Configure Serilog
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Information()
+    .WriteTo.Console()
+    .WriteTo.File(
+        path: "Logs/app-.log",
+        rollingInterval: RollingInterval.Day,
+        retainedFileCountLimit: 7
+    )
+    .CreateLogger();
+
+//  Tell ASP.NET Core to use Serilog
+builder.Host.UseSerilog();
 
 // ---------------- Controllers + JSON FIX ----------------
 
@@ -125,6 +141,8 @@ builder.Services.AddSwaggerGen(option =>
 // ---------------- Build ----------------
 var app = builder.Build();
 
+//----------Custom Middleware------------------
+app.UseMiddleware<GlobalExceptionMiddleware>();
 
 
 // ---------------- Pipeline ----------------

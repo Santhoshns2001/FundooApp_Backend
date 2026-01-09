@@ -11,3 +11,16 @@ D:\Projects\FundooNotes\FundooApp\Fundoo.Common\obj\Debug\net8.0\ModalLayer.dll
 D:\Projects\FundooNotes\FundooApp\Fundoo.Common\obj\Debug\net8.0\refint\ModalLayer.dll
 D:\Projects\FundooNotes\FundooApp\Fundoo.Common\obj\Debug\net8.0\ModalLayer.pdb
 D:\Projects\FundooNotes\FundooApp\Fundoo.Common\obj\Debug\net8.0\ref\ModalLayer.dll
+D:\Projects\FundooApp\FundooApp\Fundoo.Common\bin\Debug\net8.0\ModalLayer.deps.json
+D:\Projects\FundooApp\FundooApp\Fundoo.Common\bin\Debug\net8.0\ModalLayer.dll
+D:\Projects\FundooApp\FundooApp\Fundoo.Common\bin\Debug\net8.0\ModalLayer.pdb
+D:\Projects\FundooApp\FundooApp\Fundoo.Common\obj\Debug\net8.0\ModalLayer.csproj.AssemblyReference.cache
+D:\Projects\FundooApp\FundooApp\Fundoo.Common\obj\Debug\net8.0\ModalLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\FundooApp\FundooApp\Fundoo.Common\obj\Debug\net8.0\ModalLayer.AssemblyInfoInputs.cache
+D:\Projects\FundooApp\FundooApp\Fundoo.Common\obj\Debug\net8.0\ModalLayer.AssemblyInfo.cs
+D:\Projects\FundooApp\FundooApp\Fundoo.Common\obj\Debug\net8.0\ModalLayer.csproj.CoreCompileInputs.cache
+D:\Projects\FundooApp\FundooApp\Fundoo.Common\obj\Debug\net8.0\ModalLayer.sourcelink.json
+D:\Projects\FundooApp\FundooApp\Fundoo.Common\obj\Debug\net8.0\ModalLayer.dll
+D:\Projects\FundooApp\FundooApp\Fundoo.Common\obj\Debug\net8.0\refint\ModalLayer.dll
+D:\Projects\FundooApp\FundooApp\Fundoo.Common\obj\Debug\net8.0\ModalLayer.pdb
+D:\Projects\FundooApp\FundooApp\Fundoo.Common\obj\Debug\net8.0\ref\ModalLayer.dll

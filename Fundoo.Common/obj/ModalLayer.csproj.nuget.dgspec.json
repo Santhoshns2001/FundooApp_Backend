@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\FundooNotes\\FundooApp\\Fundoo.Common\\ModalLayer.csproj": {}
+    "D:\\Projects\\FundooApp\\FundooApp\\Fundoo.Common\\ModalLayer.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\FundooNotes\\FundooApp\\Fundoo.Common\\ModalLayer.csproj": {
+    "D:\\Projects\\FundooApp\\FundooApp\\Fundoo.Common\\ModalLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\FundooNotes\\FundooApp\\Fundoo.Common\\ModalLayer.csproj",
+        "projectUniqueName": "D:\\Projects\\FundooApp\\FundooApp\\Fundoo.Common\\ModalLayer.csproj",
         "projectName": "ModalLayer",
-        "projectPath": "D:\\Projects\\FundooNotes\\FundooApp\\Fundoo.Common\\ModalLayer.csproj",
+        "projectPath": "D:\\Projects\\FundooApp\\FundooApp\\Fundoo.Common\\ModalLayer.csproj",
         "packagesPath": "C:\\Users\\nssan\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\FundooNotes\\FundooApp\\Fundoo.Common\\obj\\",
+        "outputPath": "D:\\Projects\\FundooApp\\FundooApp\\Fundoo.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

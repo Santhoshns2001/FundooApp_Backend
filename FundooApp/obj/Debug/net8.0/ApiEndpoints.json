@@ -437,12 +437,12 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "oldpassWord",
+        "Name": "newPassword",
         "Type": "System.String",
         "IsRequired": false
       },
       {
-        "Name": "newPassword",
+        "Name": "confirmPassword",
         "Type": "System.String",
         "IsRequired": false
       }

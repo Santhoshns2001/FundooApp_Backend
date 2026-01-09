@@ -53,7 +53,7 @@ namespace EmailService.Consumers
                     await emailService.SendEmailAsync(
                         message.Email,
                         "Reset Your Password",
-                      $" KWT Token To Reset Password : {resetLink}" 
+                      $" JWT Token To Reset Password : {resetLink}" 
                     );
 
                     channel.BasicAck(args.DeliveryTag, false);

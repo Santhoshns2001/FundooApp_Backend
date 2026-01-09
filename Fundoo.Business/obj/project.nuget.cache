@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VEpmJqA0iVs=",
+  "dgSpecHash": "PAFELcRGp1M=",
   "success": true,
-  "projectFilePath": "D:\\Projects\\FundooNotes\\FundooApp\\Fundoo.Business\\BusinessLogicLayer.csproj",
+  "projectFilePath": "D:\\Projects\\FundooApp\\FundooApp\\Fundoo.Business\\BusinessLogicLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nssan\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\nssan\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

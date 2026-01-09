@@ -69,10 +69,7 @@ namespace DataAcessLayer.Repositary
             if (label == null)
                 throw new Exception("Label not found");
 
-            bool duplicate = _dbContext.Labels.Any(l =>
-                l.UserId == userId &&
-                l.LabelId != labelId &&
-                l.LabelName == newLabelName);
+            bool duplicate = _dbContext.Labels.Any(l =>l.UserId == userId && l.LabelId != labelId && l.LabelName == newLabelName);
 
             if (duplicate)
                 throw new Exception("Label name already exists");
@@ -92,9 +89,7 @@ namespace DataAcessLayer.Repositary
             if (label == null)
                 throw new Exception("Label not found");
 
-            var mappings = _dbContext.NoteLabels
-                .Where(nl => nl.LabelId == labelId)
-                .ToList();
+            var mappings = _dbContext.NoteLabels.Where(nl => nl.LabelId == labelId).ToList();
 
             _dbContext.NoteLabels.RemoveRange(mappings);
             _dbContext.Labels.Remove(label);

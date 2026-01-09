@@ -19,30 +19,28 @@ namespace FundooApp.Controllers
     {
         private FundooDBContext dbContext;
         private IUserRegisterBuss userBuss;
+        private readonly ILogger<UserController> _logger;
 
-        public UserController( FundooDBContext context,IUserRegisterBuss userBuss)
+
+        public UserController( FundooDBContext context,IUserRegisterBuss userBuss,ILogger<UserController> logger)
         {
             this.dbContext = context;
             this.userBuss = userBuss;
+            this._logger = logger;
         }
 
 
 
-        [HttpPost]
-        [Route("register")]
-        public async Task<IActionResult>  Register( UserRegisterDTO request)
+        [HttpPost("register")]
+        public async Task<IActionResult> Register(UserRegisterDTO request)
         {
-            var response=  await userBuss.RegisterUser(request);
+            var response = await userBuss.RegisterUser(request);
 
-            if (response != null)
-            {
-                return Ok(new ResponseMdl<User> { Message="Registered Successfully",IsSuccuss=true,Data=response});
-            }
-            else
-            {
-                return BadRequest(new ResponseMdl<User> { Message = "User Failed to register", Data = response });
-            }
+            _logger.LogInformation("User registered successfully with Email {Email}",request.Email);    
+
+            return Ok(new ResponseMdl<User>{Message = "Registered Successfully",IsSuccuss = true,Data = response});
         }
+
 
         [HttpPost("login")]
         public IActionResult Login(LoginDTO loginMdl)
@@ -51,11 +49,14 @@ namespace FundooApp.Controllers
 
             if (token != null)
             {
+                _logger.LogInformation("User logged in successfully with Email {Email}", loginMdl.Email);
+
                 return Ok(new ResponseMdl<string> { IsSuccuss = true, Message = "Login Success", Data = token });
             }
             else
             {
-                return BadRequest(new ResponseMdl<string> { IsSuccuss = true, Message = "Unable to login", Data = token });
+                _logger.LogInformation("User logged in Failed with Email {Email}", loginMdl.Email);
+                return BadRequest(new ResponseMdl<string> { IsSuccuss = true, Message = "Unable to login" });
             }
         }
 
@@ -69,10 +70,12 @@ namespace FundooApp.Controllers
 
             if (res)
             {
+              
                 return Ok(new ResponseMdl<string> { IsSuccuss = true, Message = "Login Success", Data = "Reset link has sent to the mail" });
             }
             else
             {
+
                 return BadRequest(new ResponseMdl<string> { IsSuccuss = true, Message = "Unable to login", Data = "something went wrong" });
             }
 
@@ -81,7 +84,7 @@ namespace FundooApp.Controllers
         [Authorize]
         [HttpPut]
         [Route("ResetPassword")]
-        public IActionResult ResetPassword(string oldpassWord,string newPassword)
+        public IActionResult ResetPassword(string newPassword,string confirmPassword)
         {
 
             var userEmailClaim = User.FindFirst(ClaimTypes.Email);
@@ -91,7 +94,7 @@ namespace FundooApp.Controllers
 
             string Email = userEmailClaim.Value;
 
-            if (oldpassWord!=newPassword)
+            if (newPassword != newPassword)
                 return BadRequest(new ResponseMdl<string>() { IsSuccuss = false, Message = "password and confirm password does not match", Data = "please check the password and confirm password " });
 
            

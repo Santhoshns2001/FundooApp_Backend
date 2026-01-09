@@ -48,6 +48,15 @@ namespace BusinessLogicLayer.Service
                 //calling smtp here to send the mail after registration.
               await  _emailService.SendEmailAsync(request.Email, "Registration Successful", $"<h2>Welcome {request.FirstName}</h2>" +
                  "<p>Your account has been created successfully.</p>");
+
+                var message = new RegistrationEvent
+                {
+                    Message = "Registration is Success",
+                    UserId=user.UserId,
+                    UserName=user.FirstName
+                };
+
+                //_rabbitMqProducer.Publish(message, "register-queue");
             }
 
             return user;
