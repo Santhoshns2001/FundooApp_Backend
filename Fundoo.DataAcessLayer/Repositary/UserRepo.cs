@@ -16,7 +16,7 @@ using ModalLayer;
 using ModalLayer.DTOs.User;
 using ModalLayer.Entities;
 
-namespace DataAcessLayer.Repositary
+namespace DataAcessLayer.Repositary 
 {
     public class UserRepo : IUserRepo
     {
@@ -30,11 +30,6 @@ namespace DataAcessLayer.Repositary
         }
         public User UserRegister(UserRegisterDTO request)
         {
-            if (Check(request.Email))
-            {
-                throw new InvalidOperationException("Email already exists");
-            }
-
             User userEntity = new User()
             {
                 Email = request.Email,
@@ -51,25 +46,12 @@ namespace DataAcessLayer.Repositary
             return userEntity;
         }
 
-        private bool Check(string Email)
-        {
-
-            return context.Users.Any(m => m.Email == Email);
-        }
+       
 
      
 
         public  User LoginUser(LoginDTO mdl)
         {
-            if (mdl == null)
-                throw new ArgumentNullException(nameof(mdl));
-
-            if (string.IsNullOrWhiteSpace(mdl.Email))
-                throw new ArgumentException("Email is required");
-
-            if (string.IsNullOrWhiteSpace(mdl.Password))
-                throw new ArgumentException("Password is required");
-
             var user = context.Users.FirstOrDefault(u => u.Email == mdl.Email);
 
             if (user == null)
@@ -89,9 +71,7 @@ namespace DataAcessLayer.Repositary
         public ForgotPasswordEvent ForgotPassword(string email)
         {
             email = email.ToLower();
-
-            if (!string.IsNullOrWhiteSpace(email))
-            {
+           
                 var user = context.Users.FirstOrDefault(u=> u.Email == email);
 
                 if (user != null)
@@ -104,13 +84,8 @@ namespace DataAcessLayer.Repositary
                 }
                 else
                 {
-                    throw new Exception("user does not exist ");
+                   return null;
                 }
-            }
-            else
-            {
-                throw new Exception("Invalid Email Provided ");
-            }
         }
 
         public bool ResetPassword(string Email, string Password)

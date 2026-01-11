@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ModalLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a6412772935b691520ad7a0ee1d976ee5c97414b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+70a2c2dc43e8f0691f0385e8b2d1c53e99a88d73")]
 [assembly: System.Reflection.AssemblyProductAttribute("ModalLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ModalLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

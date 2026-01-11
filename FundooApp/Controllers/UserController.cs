@@ -1,4 +1,5 @@
-﻿using System.Security.Claims;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Security.Claims;
 using BusinessLogicLayer.Interfaces;
 using DataAcessLayer.Data;
 using Microsoft.AspNetCore.Authorization;
@@ -7,6 +8,7 @@ using ModalLayer;
 using ModalLayer.DTOs;
 using ModalLayer.DTOs.User;
 using ModalLayer.Entities;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -34,6 +36,12 @@ namespace FundooApp.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> Register(UserRegisterDTO request)
         {
+
+            if (!ModelState.IsValid)
+            {
+                _logger.LogInformation("enter the all mandatory things{Email}", request.Email);
+                return BadRequest(new ResponseMdl<User> { Message = "Please Enter the mandatory things ", IsSuccuss = true, Data = null });
+            }
             var response = await userBuss.RegisterUser(request);
 
             _logger.LogInformation("User registered successfully with Email {Email}",request.Email);    
@@ -45,6 +53,12 @@ namespace FundooApp.Controllers
         [HttpPost("login")]
         public IActionResult Login(LoginDTO loginMdl)
         {
+            if (!ModelState.IsValid)
+            {
+                _logger.LogInformation("User logged in Failed with Email {Email}", loginMdl.Email);
+                return BadRequest(new ResponseMdl<string> { IsSuccuss = false, Message = "Please enter the valid email and password" });
+            }
+
             var token = userBuss.LoginUser(loginMdl);
 
             if (token != null)
@@ -56,14 +70,14 @@ namespace FundooApp.Controllers
             else
             {
                 _logger.LogInformation("User logged in Failed with Email {Email}", loginMdl.Email);
-                return BadRequest(new ResponseMdl<string> { IsSuccuss = true, Message = "Unable to login" });
+                return BadRequest(new ResponseMdl<string> { IsSuccuss = false, Message = "Unable to login" });
             }
         }
 
        
         [HttpGet]
         [Route("ForgotPassword")]
-        public IActionResult ForgotPassword(string Email)
+        public IActionResult ForgotPassword ([Required] string Email)
         {
 
          bool res=  userBuss.ForgotPassword(Email);
@@ -84,7 +98,7 @@ namespace FundooApp.Controllers
         [Authorize]
         [HttpPut]
         [Route("ResetPassword")]
-        public IActionResult ResetPassword(string newPassword,string confirmPassword)
+        public IActionResult ResetPassword([Required] string newPassword,[Required] string confirmPassword)
         {
 
             var userEmailClaim = User.FindFirst(ClaimTypes.Email);

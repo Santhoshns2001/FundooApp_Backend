@@ -5,6 +5,7 @@ using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 using BusinessLogicLayer.Interfaces;
+using DataAcessLayer.Data;
 using DataAcessLayer.Interface;
 using EmailService.Interfaces;
 using ModalLayer;
@@ -19,20 +20,22 @@ namespace BusinessLogicLayer.Service
         private readonly IJWTService _jwtService;
         private readonly IEmailService _emailService;
         private readonly IRabbitMqProducer _rabbitMqProducer;
-        public UserBuss( IUserRepo userRepo,IJWTService jWTService,IEmailService emailService,IRabbitMqProducer rabbitMqProducer)
+        private readonly FundooDBContext context;
+        public UserBuss( IUserRepo userRepo,IJWTService jWTService,IEmailService emailService,IRabbitMqProducer rabbitMqProducer,FundooDBContext dBContext)
         {
             this._userRepo = userRepo;
             this._jwtService = jWTService;
             this._emailService = emailService;
             this._rabbitMqProducer = rabbitMqProducer;
+            this.context = dBContext;
         }
 
         public string LoginUser(LoginDTO loginDTO)
         {
            var user= _userRepo.LoginUser(loginDTO);
 
-            if (user == null) { 
-                return null;
+            if (user == null) {
+                throw new Exception("User Not Found");
             }
 
           return  _jwtService.GenerateToken(user.Email,user.UserId);
@@ -40,7 +43,12 @@ namespace BusinessLogicLayer.Service
 
         public async Task<User> RegisterUser(UserRegisterDTO request)
         {
-            var user= _userRepo.UserRegister(request);
+
+            if (Check(request.Email))
+            {
+                throw new InvalidOperationException("Email already exists");
+            }
+                var user = _userRepo.UserRegister(request);
 
             if (user != null)
             {
@@ -56,7 +64,6 @@ namespace BusinessLogicLayer.Service
                     UserName=user.FirstName
                 };
 
-                //_rabbitMqProducer.Publish(message, "register-queue");
             }
 
             return user;
@@ -67,7 +74,7 @@ namespace BusinessLogicLayer.Service
            var forgotPassword= _userRepo.ForgotPassword(Email);
 
             if (forgotPassword == null)
-                 return false; 
+                throw new Exception("No Email Found in the Account"); 
             
                 var token = _jwtService.GenerateToken(forgotPassword.Email, forgotPassword.UserId);
 
@@ -85,6 +92,12 @@ namespace BusinessLogicLayer.Service
         public bool ResetPassword(string email, string password)
         {
            return _userRepo.ResetPassword(email, password);
+        }
+
+        private bool Check(string Email)
+        {
+
+            return context.Users.Any(m => m.Email == Email);
         }
     }
 }

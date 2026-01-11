@@ -148,7 +148,6 @@ app.UseMiddleware<GlobalExceptionMiddleware>();
 // ---------------- Pipeline ----------------
 if (app.Environment.IsDevelopment())
 {
-    app.UseDeveloperExceptionPage(); 
     app.UseSwagger();
     app.UseSwaggerUI();
 }

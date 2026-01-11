@@ -636,6 +636,7 @@
           {
             "name": "Email",
             "in": "query",
+            "required": true,
             "schema": {
               "type": "string"
             }
@@ -657,6 +658,7 @@
           {
             "name": "newPassword",
             "in": "query",
+            "required": true,
             "schema": {
               "type": "string"
             }
@@ -664,6 +666,7 @@
           {
             "name": "confirmPassword",
             "in": "query",
+            "required": true,
             "schema": {
               "type": "string"
             }
@@ -680,37 +683,49 @@
   "components": {
     "schemas": {
       "LoginDTO": {
+        "required": [
+          "email",
+          "password"
+        ],
         "type": "object",
         "properties": {
           "email": {
+            "minLength": 1,
             "type": "string",
-            "nullable": true
+            "format": "email"
           },
           "password": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           }
         },
         "additionalProperties": false
       },
       "UserRegisterDTO": {
+        "required": [
+          "email",
+          "firstName",
+          "lastName",
+          "password"
+        ],
         "type": "object",
         "properties": {
           "firstName": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           },
           "lastName": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           },
           "email": {
+            "minLength": 1,
             "type": "string",
-            "nullable": true
+            "format": "email"
           },
           "password": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           }
         },
         "additionalProperties": false
