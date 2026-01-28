@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using ModalLayer.DTOs;
+using ModalLayer.DTOs.Collaborator;
 using ModalLayer.Entities;
 
 namespace FundooApp.Controllers
@@ -25,7 +26,7 @@ namespace FundooApp.Controllers
         [Authorize]
         [HttpPost]
         [Route("AddCollaborator")]
-        public IActionResult AddCollaborator(string Email,int notesId)
+        public IActionResult AddCollaborator([FromBody] AddCollaboratorRequest request)
         {
 
             var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
@@ -35,7 +36,7 @@ namespace FundooApp.Controllers
 
             int userId = int.Parse(userIdClaim.Value);
 
-            Collaborator collaborator= collabBuss.AddCollaborator(Email, notesId,userId);
+            Collaborator collaborator= collabBuss.AddCollaborator(request.Email, request.NotesId, userId);
 
             if (collaborator != null)
             {

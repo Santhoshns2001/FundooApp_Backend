@@ -1,0 +1,498 @@
+2026-01-26 11:10:06.994 +05:30 [INF] User profile is available. Using 'C:\Users\nssan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-26 11:10:13.126 +05:30 [INF] Now listening on: https://localhost:7224
+2026-01-26 11:10:13.149 +05:30 [INF] Now listening on: http://localhost:5285
+2026-01-26 11:10:14.748 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger - null null
+2026-01-26 11:10:15.114 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-26 11:10:15.248 +05:30 [INF] Hosting environment: Development
+2026-01-26 11:10:15.337 +05:30 [INF] Content root path: D:\Projects\FundooApp\FundooApp\FundooApp
+2026-01-26 11:10:16.559 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger - 301 0 null 1926.6425ms
+2026-01-26 11:10:16.586 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - null null
+2026-01-26 11:10:17.487 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/swagger-ui-standalone-preset.js - null null
+2026-01-26 11:10:17.534 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-26 11:10:17.487 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/swagger-ui-bundle.js - null null
+2026-01-26 11:10:17.693 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 16503 application/javascript; charset=utf-8 160.9196ms
+2026-01-26 11:10:17.533 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2026-01-26 11:10:17.483 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/swagger-ui.css - null null
+2026-01-26 11:10:17.537 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - 200 null text/html;charset=utf-8 950.964ms
+2026-01-26 11:10:18.177 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2026-01-26 11:10:17.810 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2026-01-26 11:10:18.201 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2026-01-26 11:10:18.299 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/swagger-ui.css - 200 152034 text/css 815.9815ms
+2026-01-26 11:10:18.359 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 871.8591ms
+2026-01-26 11:10:18.322 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 835.9881ms
+2026-01-26 11:10:18.488 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 968.343ms
+2026-01-26 11:10:18.547 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2026-01-26 11:10:18.834 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 291.8701ms
+2026-01-26 11:18:02.389 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/User/login - null null
+2026-01-26 11:18:03.801 +05:30 [INF] CORS policy execution successful.
+2026-01-26 11:18:04.104 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/User/login - 204 null null 1793.8826ms
+2026-01-26 11:18:04.142 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7224/api/User/login - application/json 57
+2026-01-26 11:18:06.482 +05:30 [INF] CORS policy execution successful.
+2026-01-26 11:18:13.771 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/User/login - null null
+2026-01-26 11:18:14.921 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/User/login - null null
+2026-01-26 11:18:15.003 +05:30 [INF] CORS policy execution successful.
+2026-01-26 11:18:16.474 +05:30 [INF] CORS policy execution successful.
+2026-01-26 11:18:17.682 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/User/login - 204 null null 3911.2415ms
+2026-01-26 11:18:18.153 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7224/api/User/login - application/json 57
+2026-01-26 11:18:18.450 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/User/login - 204 null null 3529.5132ms
+2026-01-26 11:18:21.658 +05:30 [INF] CORS policy execution successful.
+2026-01-26 11:18:18.767 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7224/api/User/login - application/json 57
+2026-01-26 11:18:26.648 +05:30 [INF] CORS policy execution successful.
+2026-01-26 11:18:47.210 +05:30 [INF] Executing endpoint 'FundooApp.Controllers.UserController.Login (FundooApp)'
+2026-01-26 11:18:47.210 +05:30 [INF] Executing endpoint 'FundooApp.Controllers.UserController.Login (FundooApp)'
+2026-01-26 11:18:47.217 +05:30 [INF] Executing endpoint 'FundooApp.Controllers.UserController.Login (FundooApp)'
+2026-01-26 11:18:48.095 +05:30 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(ModalLayer.DTOs.User.LoginDTO) on controller FundooApp.Controllers.UserController (FundooApp).
+2026-01-26 11:18:48.095 +05:30 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(ModalLayer.DTOs.User.LoginDTO) on controller FundooApp.Controllers.UserController (FundooApp).
+2026-01-26 11:18:48.095 +05:30 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(ModalLayer.DTOs.User.LoginDTO) on controller FundooApp.Controllers.UserController (FundooApp).
+2026-01-26 11:19:00.694 +05:30 [INF] Executed action FundooApp.Controllers.UserController.Login (FundooApp) in 11852.4733ms
+2026-01-26 11:19:00.694 +05:30 [INF] Executed action FundooApp.Controllers.UserController.Login (FundooApp) in 12238.6554ms
+2026-01-26 11:19:00.694 +05:30 [INF] Executed action FundooApp.Controllers.UserController.Login (FundooApp) in 11477.7854ms
+2026-01-26 11:19:00.748 +05:30 [INF] Executed endpoint 'FundooApp.Controllers.UserController.Login (FundooApp)'
+2026-01-26 11:19:00.811 +05:30 [INF] Executed endpoint 'FundooApp.Controllers.UserController.Login (FundooApp)'
+2026-01-26 11:19:00.871 +05:30 [INF] Executed endpoint 'FundooApp.Controllers.UserController.Login (FundooApp)'
+2026-01-26 11:19:01.049 +05:30 [ERR] Unhandled exception occurred. Path: /api/User/login, Method: POST
+System.IO.IOException: The client reset the request stream.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream.ReadAsyncInternal(Memory`1 destination, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Microsoft.AspNetCore.WebUtilities.FileBufferingReadStream.ReadAsync(Memory`1 buffer, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.WebUtilities.StreamHelperExtensions.DrainAsync(Stream stream, ArrayPool`1 bytePool, Nullable`1 limit, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter.ReadRequestBodyAsync(InputFormatterContext context, Encoding encoding)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder.BindModelAsync(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at FundooApp.MiddleWare.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in D:\Projects\FundooApp\FundooApp\FundooApp\MiddleWare\GlobalExceptionMiddleware.cs:line 22
+2026-01-26 11:19:01.128 +05:30 [ERR] Unhandled exception occurred. Path: /api/User/login, Method: POST
+System.IO.IOException: The client reset the request stream.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream.ReadAsyncInternal(Memory`1 destination, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Microsoft.AspNetCore.WebUtilities.FileBufferingReadStream.ReadAsync(Memory`1 buffer, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.WebUtilities.StreamHelperExtensions.DrainAsync(Stream stream, ArrayPool`1 bytePool, Nullable`1 limit, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter.ReadRequestBodyAsync(InputFormatterContext context, Encoding encoding)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder.BindModelAsync(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at FundooApp.MiddleWare.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in D:\Projects\FundooApp\FundooApp\FundooApp\MiddleWare\GlobalExceptionMiddleware.cs:line 22
+2026-01-26 11:19:01.205 +05:30 [ERR] Unhandled exception occurred. Path: /api/User/login, Method: POST
+System.IO.IOException: The client reset the request stream.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream.ReadAsyncInternal(Memory`1 destination, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Microsoft.AspNetCore.WebUtilities.FileBufferingReadStream.ReadAsync(Memory`1 buffer, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.WebUtilities.StreamHelperExtensions.DrainAsync(Stream stream, ArrayPool`1 bytePool, Nullable`1 limit, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter.ReadRequestBodyAsync(InputFormatterContext context, Encoding encoding)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder.BindModelAsync(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at FundooApp.MiddleWare.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in D:\Projects\FundooApp\FundooApp\FundooApp\MiddleWare\GlobalExceptionMiddleware.cs:line 22
+2026-01-26 11:19:02.846 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7224/api/User/login - 500 null application/json 58702.5822ms
+2026-01-26 11:19:02.923 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7224/api/User/login - 500 null application/json 44772.0955ms
+2026-01-26 11:19:03.402 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7224/api/User/login - 500 null application/json 44635.3089ms
+2026-01-26 11:19:17.294 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/User/login - null null
+2026-01-26 11:19:18.267 +05:30 [INF] CORS policy execution successful.
+2026-01-26 11:19:18.465 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/User/login - 204 null null 1190.975ms
+2026-01-26 11:19:18.509 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7224/api/User/login - application/json 57
+2026-01-26 11:19:19.694 +05:30 [INF] CORS policy execution successful.
+2026-01-26 11:19:19.889 +05:30 [INF] Executing endpoint 'FundooApp.Controllers.UserController.Login (FundooApp)'
+2026-01-26 11:19:20.128 +05:30 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(ModalLayer.DTOs.User.LoginDTO) on controller FundooApp.Controllers.UserController (FundooApp).
+2026-01-26 11:20:35.182 +05:30 [INF] Executed DbCommand (1,542ms) [Parameters=[@__mdl_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[ChangedAt], [u].[Created], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__mdl_Email_0
+2026-01-26 11:20:41.095 +05:30 [INF] User logged in successfully with Email n.s.santhosh116@gmail.com
+2026-01-26 11:20:41.182 +05:30 [INF] Executing OkObjectResult, writing value of type 'ModalLayer.DTOs.ResponseMdl`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-26 11:20:41.650 +05:30 [INF] Executed action FundooApp.Controllers.UserController.Login (FundooApp) in 81023.3272ms
+2026-01-26 11:20:41.739 +05:30 [INF] Executed endpoint 'FundooApp.Controllers.UserController.Login (FundooApp)'
+2026-01-26 11:20:41.856 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7224/api/User/login - 200 282 application/json; charset=utf-8 83346.8568ms
+2026-01-26 11:21:48.462 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/Label/GetAllLabels - null null
+2026-01-26 11:21:48.478 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/Notes/getNotes - null null
+2026-01-26 11:21:49.387 +05:30 [INF] CORS policy execution successful.
+2026-01-26 11:21:50.064 +05:30 [INF] CORS policy execution successful.
+2026-01-26 11:21:50.349 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/Label/GetAllLabels - 204 null null 1884.06ms
+2026-01-26 11:21:50.624 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/Notes/getNotes - 204 null null 2146.309ms
+2026-01-26 11:21:50.588 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/api/Label/GetAllLabels - application/json null
+2026-01-26 11:21:50.658 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/api/Notes/getNotes - application/json null
+2026-01-26 11:21:51.954 +05:30 [INF] CORS policy execution successful.
+2026-01-26 11:21:52.319 +05:30 [INF] CORS policy execution successful.
+2026-01-26 11:21:53.365 +05:30 [INF] Executing endpoint 'FundooApp.Controllers.NotesController.GetAllNotes (FundooApp)'
+2026-01-26 11:21:53.377 +05:30 [INF] Executing endpoint 'FundooApp.Controllers.LabelController.FetchLabel (FundooApp)'
+2026-01-26 11:21:53.748 +05:30 [INF] Route matched with {action = "GetAllNotes", controller = "Notes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllNotes() on controller FundooApp.Controllers.NotesController (FundooApp).
+2026-01-26 11:21:53.786 +05:30 [INF] Route matched with {action = "FetchLabel", controller = "Label"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult FetchLabel() on controller FundooApp.Controllers.LabelController (FundooApp).
+2026-01-26 11:21:55.063 +05:30 [INF] Executed DbCommand (99ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[LabelId], [l].[CreatedAt], [l].[LabelName], [l].[UpdatedAt], [l].[UserId]
+FROM [Labels] AS [l]
+WHERE [l].[UserId] = @__userId_0
+ORDER BY [l].[LabelName]
+2026-01-26 11:21:56.136 +05:30 [INF] Executing OkObjectResult, writing value of type 'ModalLayer.DTOs.ResponseMdl`1[[System.Collections.Generic.List`1[[ModalLayer.Entities.Label, ModalLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-26 11:21:57.087 +05:30 [INF] Executed action FundooApp.Controllers.LabelController.FetchLabel (FundooApp) in 2810.3905ms
+2026-01-26 11:21:57.554 +05:30 [INF] Executed endpoint 'FundooApp.Controllers.LabelController.FetchLabel (FundooApp)'
+2026-01-26 11:21:57.739 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/api/Label/GetAllLabels - 200 231 application/json; charset=utf-8 7153.9187ms
+2026-01-26 11:22:17.784 +05:30 [WRN] Redis GET failed. Falling back to DB.
+StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: It was not possible to connect to the redis server(s). ConnectTimeout, command=HMGET, timeout: 5000, inst: 0, qu: 0, qs: 0, aw: False, bw: CheckingForTimeout, rs: NotStarted, ws: Idle, in: 0, last-in: 0, cur-in: 0, sync-ops: 0, async-ops: 1, serverEndpoint: localhost:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: SANTHOSH(SE.Redis-v2.7.27.49176), IOCP: (Busy=0,Free=1000,Min=1,Max=1000), WORKER: (Busy=1,Free=32766,Min=12,Max=32767), POOL: (Threads=7,QueuedItems=1,CompletedItems=1481,Timers=11), v: 2.7.27.49176 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). ConnectTimeout
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAndRefreshAsync(String key, Boolean getData, CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.GetStringAsync(IDistributedCache cache, String key, CancellationToken token)
+   at BusinessLogicLayer.Service.NotesBuss.GetAllNotes(Int32 userId) in D:\Projects\FundooApp\FundooApp\Fundoo.Business\Service\NotesBuss.cs:line 59
+2026-01-26 11:22:19.758 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[@__UserId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[NotesId], [n].[Colour], [n].[CreatedAt], [n].[Description], [n].[Image], [n].[IsArchive], [n].[IsPin], [n].[IsTrash], [n].[Reminder], [n].[Title], [n].[UpdatedAt], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[UserId] = @__UserId_0
+2026-01-26 11:22:27.800 +05:30 [WRN] Redis SET failed.
+StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: It was not possible to connect to the redis server(s). ConnectTimeout, command=HMSET, timeout: 5000, inst: 0, qu: 1, qs: 0, aw: False, bw: CheckingForTimeout, last-in: 0, cur-in: 0, sync-ops: 0, async-ops: 3, serverEndpoint: localhost:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: SANTHOSH(SE.Redis-v2.7.27.49176), IOCP: (Busy=0,Free=1000,Min=1,Max=1000), WORKER: (Busy=2,Free=32765,Min=12,Max=32767), POOL: (Threads=7,QueuedItems=1,CompletedItems=1554,Timers=9), v: 2.7.27.49176 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). ConnectTimeout
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.SetImplAsync(String key, ReadOnlySequence`1 value, DistributedCacheEntryOptions options, CancellationToken token)
+   at BusinessLogicLayer.Service.NotesBuss.GetAllNotes(Int32 userId) in D:\Projects\FundooApp\FundooApp\Fundoo.Business\Service\NotesBuss.cs:line 82
+2026-01-26 11:22:28.409 +05:30 [INF] Executing OkObjectResult, writing value of type 'ModalLayer.DTOs.ResponseMdl`1[[System.Collections.Generic.List`1[[ModalLayer.Entities.Notes, ModalLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-26 11:22:28.587 +05:30 [INF] Executed action FundooApp.Controllers.NotesController.GetAllNotes (FundooApp) in 34558.2439ms
+2026-01-26 11:22:28.683 +05:30 [INF] Executed endpoint 'FundooApp.Controllers.NotesController.GetAllNotes (FundooApp)'
+2026-01-26 11:22:28.773 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/api/Notes/getNotes - 200 4193 application/json; charset=utf-8 38120.6152ms
+2026-01-26 11:22:34.019 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/User/login - null null
+2026-01-26 11:22:34.059 +05:30 [INF] CORS policy execution successful.
+2026-01-26 11:22:34.089 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/User/login - 204 null null 73.4655ms
+2026-01-26 11:22:34.097 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7224/api/User/login - application/json 57
+2026-01-26 11:22:34.509 +05:30 [INF] CORS policy execution successful.
+2026-01-26 11:22:34.530 +05:30 [INF] Executing endpoint 'FundooApp.Controllers.UserController.Login (FundooApp)'
+2026-01-26 11:22:34.546 +05:30 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(ModalLayer.DTOs.User.LoginDTO) on controller FundooApp.Controllers.UserController (FundooApp).
+2026-01-26 11:22:34.639 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[@__mdl_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[ChangedAt], [u].[Created], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__mdl_Email_0
+2026-01-26 11:22:36.880 +05:30 [INF] User logged in successfully with Email n.s.santhosh116@gmail.com
+2026-01-26 11:22:37.120 +05:30 [INF] Executing OkObjectResult, writing value of type 'ModalLayer.DTOs.ResponseMdl`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-26 11:22:37.214 +05:30 [INF] Executed action FundooApp.Controllers.UserController.Login (FundooApp) in 2636.8359ms
+2026-01-26 11:22:37.311 +05:30 [INF] Executed endpoint 'FundooApp.Controllers.UserController.Login (FundooApp)'
+2026-01-26 11:22:37.569 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7224/api/User/login - 200 282 application/json; charset=utf-8 3472.4697ms
+2026-01-26 11:22:37.720 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/Notes/getNotes - null null
+2026-01-26 11:22:37.704 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/Label/GetAllLabels - null null
+2026-01-26 11:22:38.619 +05:30 [INF] CORS policy execution successful.
+2026-01-26 11:22:39.044 +05:30 [INF] CORS policy execution successful.
+2026-01-26 11:22:39.055 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/Notes/getNotes - 204 null null 1334.6017ms
+2026-01-26 11:22:39.085 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/Label/GetAllLabels - 204 null null 1379.4602ms
+2026-01-26 11:22:39.069 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/api/Notes/getNotes - application/json null
+2026-01-26 11:22:39.097 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/api/Label/GetAllLabels - application/json null
+2026-01-26 11:22:39.329 +05:30 [INF] CORS policy execution successful.
+2026-01-26 11:22:39.483 +05:30 [INF] CORS policy execution successful.
+2026-01-26 11:22:39.536 +05:30 [INF] Executing endpoint 'FundooApp.Controllers.NotesController.GetAllNotes (FundooApp)'
+2026-01-26 11:22:39.548 +05:30 [INF] Executing endpoint 'FundooApp.Controllers.LabelController.FetchLabel (FundooApp)'
+2026-01-26 11:22:39.578 +05:30 [INF] Route matched with {action = "GetAllNotes", controller = "Notes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllNotes() on controller FundooApp.Controllers.NotesController (FundooApp).
+2026-01-26 11:22:39.601 +05:30 [INF] Route matched with {action = "FetchLabel", controller = "Label"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult FetchLabel() on controller FundooApp.Controllers.LabelController (FundooApp).
+2026-01-26 11:22:39.883 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[LabelId], [l].[CreatedAt], [l].[LabelName], [l].[UpdatedAt], [l].[UserId]
+FROM [Labels] AS [l]
+WHERE [l].[UserId] = @__userId_0
+ORDER BY [l].[LabelName]
+2026-01-26 11:22:40.023 +05:30 [INF] Executing OkObjectResult, writing value of type 'ModalLayer.DTOs.ResponseMdl`1[[System.Collections.Generic.List`1[[ModalLayer.Entities.Label, ModalLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-26 11:22:40.064 +05:30 [INF] Executed action FundooApp.Controllers.LabelController.FetchLabel (FundooApp) in 206.1427ms
+2026-01-26 11:22:40.098 +05:30 [INF] Executed endpoint 'FundooApp.Controllers.LabelController.FetchLabel (FundooApp)'
+2026-01-26 11:22:40.213 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/api/Label/GetAllLabels - 200 231 application/json; charset=utf-8 1122.8043ms
+2026-01-26 11:22:46.143 +05:30 [WRN] Redis GET failed. Falling back to DB.
+StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: It was not possible to connect to the redis server(s). ConnectTimeout, command=HMGET, timeout: 5000, inst: 0, qu: 0, qs: 0, aw: False, bw: CheckingForTimeout, rs: NotStarted, ws: Idle, in: 0, last-in: 0, cur-in: 0, sync-ops: 0, async-ops: 4, serverEndpoint: localhost:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: SANTHOSH(SE.Redis-v2.7.27.49176), IOCP: (Busy=0,Free=1000,Min=1,Max=1000), WORKER: (Busy=2,Free=32765,Min=12,Max=32767), POOL: (Threads=7,QueuedItems=0,CompletedItems=1759,Timers=10), v: 2.7.27.49176 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). ConnectTimeout
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAndRefreshAsync(String key, Boolean getData, CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.GetStringAsync(IDistributedCache cache, String key, CancellationToken token)
+   at BusinessLogicLayer.Service.NotesBuss.GetAllNotes(Int32 userId) in D:\Projects\FundooApp\FundooApp\Fundoo.Business\Service\NotesBuss.cs:line 59
+2026-01-26 11:22:46.295 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@__UserId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[NotesId], [n].[Colour], [n].[CreatedAt], [n].[Description], [n].[Image], [n].[IsArchive], [n].[IsPin], [n].[IsTrash], [n].[Reminder], [n].[Title], [n].[UpdatedAt], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[UserId] = @__UserId_0
+2026-01-26 11:22:52.690 +05:30 [WRN] Redis SET failed.
+StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: It was not possible to connect to the redis server(s). ConnectTimeout, command=HMSET, timeout: 5000, inst: 0, qu: 1, qs: 0, aw: False, bw: CheckingForTimeout, rs: NotStarted, ws: Initializing, in: 0, last-in: 0, cur-in: 0, sync-ops: 0, async-ops: 6, serverEndpoint: localhost:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: SANTHOSH(SE.Redis-v2.7.27.49176), IOCP: (Busy=0,Free=1000,Min=1,Max=1000), WORKER: (Busy=2,Free=32765,Min=12,Max=32767), POOL: (Threads=7,QueuedItems=0,CompletedItems=1800,Timers=10), v: 2.7.27.49176 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). ConnectTimeout
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.SetImplAsync(String key, ReadOnlySequence`1 value, DistributedCacheEntryOptions options, CancellationToken token)
+   at BusinessLogicLayer.Service.NotesBuss.GetAllNotes(Int32 userId) in D:\Projects\FundooApp\FundooApp\Fundoo.Business\Service\NotesBuss.cs:line 82
+2026-01-26 11:22:53.930 +05:30 [INF] Executing OkObjectResult, writing value of type 'ModalLayer.DTOs.ResponseMdl`1[[System.Collections.Generic.List`1[[ModalLayer.Entities.Notes, ModalLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-26 11:22:54.688 +05:30 [INF] Executed action FundooApp.Controllers.NotesController.GetAllNotes (FundooApp) in 14923.2648ms
+2026-01-26 11:22:55.123 +05:30 [INF] Executed endpoint 'FundooApp.Controllers.NotesController.GetAllNotes (FundooApp)'
+2026-01-26 11:22:55.565 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/api/Notes/getNotes - 200 4193 application/json; charset=utf-8 16495.9456ms
+2026-01-26 11:31:31.601 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/Label/GetAllLabels - null null
+2026-01-26 11:31:31.971 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/Notes/getNotes - null null
+2026-01-26 11:31:38.182 +05:30 [INF] CORS policy execution successful.
+2026-01-26 11:31:40.406 +05:30 [INF] CORS policy execution successful.
+2026-01-26 11:31:41.418 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/Label/GetAllLabels - 204 null null 9817.267ms
+2026-01-26 11:31:42.051 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/api/Notes/getNotes - application/json null
+2026-01-26 11:31:41.965 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/Notes/getNotes - 204 null null 9994.0804ms
+2026-01-26 11:31:43.189 +05:30 [INF] CORS policy execution successful.
+2026-01-26 11:31:41.472 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/api/Label/GetAllLabels - application/json null
+2026-01-26 11:31:43.795 +05:30 [INF] Executing endpoint 'FundooApp.Controllers.NotesController.GetAllNotes (FundooApp)'
+2026-01-26 11:31:43.870 +05:30 [INF] CORS policy execution successful.
+2026-01-26 11:31:43.958 +05:30 [INF] Route matched with {action = "GetAllNotes", controller = "Notes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllNotes() on controller FundooApp.Controllers.NotesController (FundooApp).
+2026-01-26 11:31:43.968 +05:30 [INF] Executing endpoint 'FundooApp.Controllers.LabelController.FetchLabel (FundooApp)'
+2026-01-26 11:31:44.193 +05:30 [INF] Route matched with {action = "FetchLabel", controller = "Label"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult FetchLabel() on controller FundooApp.Controllers.LabelController (FundooApp).
+2026-01-26 11:31:44.765 +05:30 [INF] Executed DbCommand (22ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[LabelId], [l].[CreatedAt], [l].[LabelName], [l].[UpdatedAt], [l].[UserId]
+FROM [Labels] AS [l]
+WHERE [l].[UserId] = @__userId_0
+ORDER BY [l].[LabelName]
+2026-01-26 11:31:45.238 +05:30 [INF] Executing OkObjectResult, writing value of type 'ModalLayer.DTOs.ResponseMdl`1[[System.Collections.Generic.List`1[[ModalLayer.Entities.Label, ModalLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-26 11:31:45.869 +05:30 [INF] Executed action FundooApp.Controllers.LabelController.FetchLabel (FundooApp) in 1374.0805ms
+2026-01-26 11:31:46.281 +05:30 [INF] Executed endpoint 'FundooApp.Controllers.LabelController.FetchLabel (FundooApp)'
+2026-01-26 11:31:46.504 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/api/Label/GetAllLabels - 200 231 application/json; charset=utf-8 5031.5593ms
+2026-01-26 11:31:49.958 +05:30 [WRN] Redis GET failed. Falling back to DB.
+StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: It was not possible to connect to the redis server(s). ConnectTimeout, command=HMGET, timeout: 5000, inst: 0, qu: 0, qs: 0, aw: False, bw: CheckingForTimeout, rs: NotStarted, ws: Idle, in: 0, last-in: 0, cur-in: 0, sync-ops: 0, async-ops: 7, serverEndpoint: localhost:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: SANTHOSH(SE.Redis-v2.7.27.49176), IOCP: (Busy=0,Free=1000,Min=1,Max=1000), WORKER: (Busy=2,Free=32765,Min=12,Max=32767), POOL: (Threads=7,QueuedItems=0,CompletedItems=3635,Timers=9), v: 2.7.27.49176 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). ConnectTimeout
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAndRefreshAsync(String key, Boolean getData, CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.GetStringAsync(IDistributedCache cache, String key, CancellationToken token)
+   at BusinessLogicLayer.Service.NotesBuss.GetAllNotes(Int32 userId) in D:\Projects\FundooApp\FundooApp\Fundoo.Business\Service\NotesBuss.cs:line 59
+2026-01-26 11:31:50.317 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[@__UserId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[NotesId], [n].[Colour], [n].[CreatedAt], [n].[Description], [n].[Image], [n].[IsArchive], [n].[IsPin], [n].[IsTrash], [n].[Reminder], [n].[Title], [n].[UpdatedAt], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[UserId] = @__UserId_0
+2026-01-26 11:31:56.837 +05:30 [WRN] Redis SET failed.
+StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: It was not possible to connect to the redis server(s). ConnectTimeout, command=HMSET, timeout: 5000, inst: 0, qu: 1, qs: 0, aw: False, bw: CheckingForTimeout, rs: NotStarted, ws: Initializing, in: 0, last-in: 0, cur-in: 0, sync-ops: 0, async-ops: 9, serverEndpoint: localhost:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: SANTHOSH(SE.Redis-v2.7.27.49176), IOCP: (Busy=0,Free=1000,Min=1,Max=1000), WORKER: (Busy=2,Free=32765,Min=12,Max=32767), POOL: (Threads=7,QueuedItems=0,CompletedItems=3690,Timers=10), v: 2.7.27.49176 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). ConnectTimeout
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.SetImplAsync(String key, ReadOnlySequence`1 value, DistributedCacheEntryOptions options, CancellationToken token)
+   at BusinessLogicLayer.Service.NotesBuss.GetAllNotes(Int32 userId) in D:\Projects\FundooApp\FundooApp\Fundoo.Business\Service\NotesBuss.cs:line 82
+2026-01-26 11:31:57.149 +05:30 [INF] Executing OkObjectResult, writing value of type 'ModalLayer.DTOs.ResponseMdl`1[[System.Collections.Generic.List`1[[ModalLayer.Entities.Notes, ModalLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-26 11:31:57.857 +05:30 [INF] Executed action FundooApp.Controllers.NotesController.GetAllNotes (FundooApp) in 13847.5006ms
+2026-01-26 11:31:58.477 +05:30 [INF] Executed endpoint 'FundooApp.Controllers.NotesController.GetAllNotes (FundooApp)'
+2026-01-26 11:31:58.759 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/api/Notes/getNotes - 200 4193 application/json; charset=utf-8 16706.3225ms
+2026-01-26 11:35:58.312 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/Label/GetAllLabels - null null
+2026-01-26 11:35:58.312 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/Notes/getNotes - null null
+2026-01-26 11:36:01.820 +05:30 [INF] CORS policy execution successful.
+2026-01-26 11:36:05.219 +05:30 [INF] CORS policy execution successful.
+2026-01-26 11:36:05.979 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/Label/GetAllLabels - 204 null null 7666.5652ms
+2026-01-26 11:36:06.782 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/api/Notes/getNotes - application/json null
+2026-01-26 11:36:06.600 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/Notes/getNotes - 204 null null 8287.2733ms
+2026-01-26 11:36:07.842 +05:30 [INF] CORS policy execution successful.
+2026-01-26 11:36:06.113 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/api/Label/GetAllLabels - application/json null
+2026-01-26 11:36:09.637 +05:30 [INF] Executing endpoint 'FundooApp.Controllers.NotesController.GetAllNotes (FundooApp)'
+2026-01-26 11:36:10.294 +05:30 [INF] CORS policy execution successful.
+2026-01-26 11:36:10.465 +05:30 [INF] Route matched with {action = "GetAllNotes", controller = "Notes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllNotes() on controller FundooApp.Controllers.NotesController (FundooApp).
+2026-01-26 11:36:10.515 +05:30 [INF] Executing endpoint 'FundooApp.Controllers.LabelController.FetchLabel (FundooApp)'
+2026-01-26 11:36:10.821 +05:30 [INF] Route matched with {action = "FetchLabel", controller = "Label"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult FetchLabel() on controller FundooApp.Controllers.LabelController (FundooApp).
+2026-01-26 11:36:11.060 +05:30 [INF] Executed DbCommand (32ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[LabelId], [l].[CreatedAt], [l].[LabelName], [l].[UpdatedAt], [l].[UserId]
+FROM [Labels] AS [l]
+WHERE [l].[UserId] = @__userId_0
+ORDER BY [l].[LabelName]
+2026-01-26 11:36:11.276 +05:30 [INF] Executing OkObjectResult, writing value of type 'ModalLayer.DTOs.ResponseMdl`1[[System.Collections.Generic.List`1[[ModalLayer.Entities.Label, ModalLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-26 11:36:11.301 +05:30 [INF] Executed action FundooApp.Controllers.LabelController.FetchLabel (FundooApp) in 285.628ms
+2026-01-26 11:36:11.343 +05:30 [INF] Executed endpoint 'FundooApp.Controllers.LabelController.FetchLabel (FundooApp)'
+2026-01-26 11:36:11.394 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/api/Label/GetAllLabels - 200 231 application/json; charset=utf-8 5281.4178ms
+2026-01-26 11:36:16.657 +05:30 [WRN] Redis GET failed. Falling back to DB.
+StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: It was not possible to connect to the redis server(s). ConnectTimeout, command=HMGET, timeout: 5000, inst: 0, qu: 0, qs: 0, aw: False, bw: CheckingForTimeout, rs: NotStarted, ws: Idle, in: 0, last-in: 0, cur-in: 0, sync-ops: 0, async-ops: 10, serverEndpoint: localhost:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: SANTHOSH(SE.Redis-v2.7.27.49176), IOCP: (Busy=0,Free=1000,Min=1,Max=1000), WORKER: (Busy=2,Free=32765,Min=12,Max=32767), POOL: (Threads=7,QueuedItems=0,CompletedItems=5121,Timers=9), v: 2.7.27.49176 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). ConnectTimeout
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAndRefreshAsync(String key, Boolean getData, CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.GetStringAsync(IDistributedCache cache, String key, CancellationToken token)
+   at BusinessLogicLayer.Service.NotesBuss.GetAllNotes(Int32 userId) in D:\Projects\FundooApp\FundooApp\Fundoo.Business\Service\NotesBuss.cs:line 59
+2026-01-26 11:36:17.322 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[@__UserId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[NotesId], [n].[Colour], [n].[CreatedAt], [n].[Description], [n].[Image], [n].[IsArchive], [n].[IsPin], [n].[IsTrash], [n].[Reminder], [n].[Title], [n].[UpdatedAt], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[UserId] = @__UserId_0
+2026-01-26 11:36:23.321 +05:30 [WRN] Redis SET failed.
+StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: It was not possible to connect to the redis server(s). ConnectTimeout, command=HMSET, timeout: 5000, inst: 0, qu: 1, qs: 0, aw: False, bw: CheckingForTimeout, rs: NotStarted, ws: Initializing, in: 0, last-in: 0, cur-in: 0, sync-ops: 0, async-ops: 12, serverEndpoint: localhost:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: SANTHOSH(SE.Redis-v2.7.27.49176), IOCP: (Busy=0,Free=1000,Min=1,Max=1000), WORKER: (Busy=0,Free=32767,Min=12,Max=32767), POOL: (Threads=7,QueuedItems=0,CompletedItems=5176,Timers=10), v: 2.7.27.49176 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). ConnectTimeout
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.SetImplAsync(String key, ReadOnlySequence`1 value, DistributedCacheEntryOptions options, CancellationToken token)
+   at BusinessLogicLayer.Service.NotesBuss.GetAllNotes(Int32 userId) in D:\Projects\FundooApp\FundooApp\Fundoo.Business\Service\NotesBuss.cs:line 82
+2026-01-26 11:36:23.506 +05:30 [INF] Executing OkObjectResult, writing value of type 'ModalLayer.DTOs.ResponseMdl`1[[System.Collections.Generic.List`1[[ModalLayer.Entities.Notes, ModalLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-26 11:36:23.605 +05:30 [INF] Executed action FundooApp.Controllers.NotesController.GetAllNotes (FundooApp) in 12845.4361ms
+2026-01-26 11:36:23.631 +05:30 [INF] Executed endpoint 'FundooApp.Controllers.NotesController.GetAllNotes (FundooApp)'
+2026-01-26 11:36:23.648 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/api/Notes/getNotes - 200 4193 application/json; charset=utf-8 16865.1677ms
+2026-01-26 11:45:51.925 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/Notes/getNotes - null null
+2026-01-26 11:45:51.925 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/Label/GetAllLabels - null null
+2026-01-26 11:45:52.310 +05:30 [INF] CORS policy execution successful.
+2026-01-26 11:45:52.571 +05:30 [INF] CORS policy execution successful.
+2026-01-26 11:45:52.582 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/Notes/getNotes - 204 null null 684.6411ms
+2026-01-26 11:45:52.599 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/Label/GetAllLabels - 204 null null 704.6622ms
+2026-01-26 11:45:52.586 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/api/Notes/getNotes - application/json null
+2026-01-26 11:45:52.613 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/api/Label/GetAllLabels - application/json null
+2026-01-26 11:45:53.853 +05:30 [INF] CORS policy execution successful.
+2026-01-26 11:45:53.988 +05:30 [INF] CORS policy execution successful.
+2026-01-26 11:45:54.381 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '26-01-2026 06:07:36', Current time (UTC): '26-01-2026 06:15:54'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2026-01-26 11:45:54.382 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '26-01-2026 06:07:36', Current time (UTC): '26-01-2026 06:15:54'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2026-01-26 11:45:54.599 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '26-01-2026 06:07:36', Current time (UTC): '26-01-2026 06:15:54'.
+2026-01-26 11:45:54.683 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '26-01-2026 06:07:36', Current time (UTC): '26-01-2026 06:15:54'.
+2026-01-26 11:45:54.903 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-01-26 11:45:54.995 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-01-26 11:45:55.185 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-01-26 11:45:55.185 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-01-26 11:45:55.214 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/api/Notes/getNotes - 401 0 null 2628.0753ms
+2026-01-26 11:45:55.232 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/api/Label/GetAllLabels - 401 0 null 2619.3881ms
+2026-01-26 12:04:13.409 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/Label/GetAllLabels - null null
+2026-01-26 12:04:13.410 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/Notes/getNotes - null null
+2026-01-26 12:04:13.622 +05:30 [INF] CORS policy execution successful.
+2026-01-26 12:04:13.773 +05:30 [INF] CORS policy execution successful.
+2026-01-26 12:04:13.799 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/api/Label/GetAllLabels - application/json null
+2026-01-26 12:04:13.862 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/api/Notes/getNotes - application/json null
+2026-01-26 12:04:13.783 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/Label/GetAllLabels - 204 null null 374.2011ms
+2026-01-26 12:04:13.816 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/Notes/getNotes - 204 null null 406.5074ms
+2026-01-26 12:04:14.033 +05:30 [INF] CORS policy execution successful.
+2026-01-26 12:04:14.080 +05:30 [INF] CORS policy execution successful.
+2026-01-26 12:04:14.303 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '26-01-2026 06:07:36', Current time (UTC): '26-01-2026 06:34:14'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2026-01-26 12:04:14.316 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '26-01-2026 06:07:36', Current time (UTC): '26-01-2026 06:34:14'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2026-01-26 12:04:14.367 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '26-01-2026 06:07:36', Current time (UTC): '26-01-2026 06:34:14'.
+2026-01-26 12:04:14.465 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '26-01-2026 06:07:36', Current time (UTC): '26-01-2026 06:34:14'.
+2026-01-26 12:04:14.522 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-01-26 12:04:14.538 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-01-26 12:04:14.550 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-01-26 12:04:14.565 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-01-26 12:04:14.578 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/api/Label/GetAllLabels - 401 0 null 780.8364ms
+2026-01-26 12:04:14.594 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/api/Notes/getNotes - 401 0 null 732.7332ms
+2026-01-26 13:27:19.165 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/Label/GetAllLabels - null null
+2026-01-26 13:27:19.233 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/Notes/getNotes - null null
+2026-01-26 13:27:23.159 +05:30 [INF] CORS policy execution successful.
+2026-01-26 13:27:24.678 +05:30 [INF] CORS policy execution successful.
+2026-01-26 13:27:25.454 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/Label/GetAllLabels - 204 null null 6289.74ms
+2026-01-26 13:27:25.568 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/api/Label/GetAllLabels - application/json null
+2026-01-26 13:27:26.175 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/Notes/getNotes - 204 null null 6941.4821ms
+2026-01-26 13:27:26.258 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/api/Notes/getNotes - application/json null
+2026-01-26 13:27:27.679 +05:30 [INF] CORS policy execution successful.
+2026-01-26 13:27:28.339 +05:30 [INF] CORS policy execution successful.
+2026-01-26 13:27:28.415 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '26-01-2026 06:07:36', Current time (UTC): '26-01-2026 07:57:28'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2026-01-26 13:27:28.455 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '26-01-2026 06:07:36', Current time (UTC): '26-01-2026 07:57:28'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2026-01-26 13:27:28.586 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '26-01-2026 06:07:36', Current time (UTC): '26-01-2026 07:57:28'.
+2026-01-26 13:27:28.662 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '26-01-2026 06:07:36', Current time (UTC): '26-01-2026 07:57:28'.
+2026-01-26 13:27:28.684 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-01-26 13:27:28.728 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-01-26 13:27:28.813 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-01-26 13:27:29.020 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-01-26 13:27:29.248 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/api/Label/GetAllLabels - 401 0 null 3680.5516ms
+2026-01-26 13:27:29.403 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/api/Notes/getNotes - 401 0 null 3166.6693ms
+2026-01-26 23:20:59.727 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/Label/GetAllLabels - null null
+2026-01-26 23:20:59.727 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/Notes/getNotes - null null
+2026-01-26 23:21:09.860 +05:30 [INF] CORS policy execution successful.
+2026-01-26 23:21:14.995 +05:30 [INF] CORS policy execution successful.
+2026-01-26 23:21:18.054 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/api/Label/GetAllLabels - application/json null
+2026-01-26 23:21:21.116 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/Notes/getNotes - 204 null null 24195.9167ms
+2026-01-26 23:21:26.991 +05:30 [INF] CORS policy execution successful.
+2026-01-26 23:21:21.480 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/api/Notes/getNotes - application/json null
+2026-01-26 23:21:35.633 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '26-01-2026 06:07:36', Current time (UTC): '26-01-2026 17:51:35'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2026-01-26 23:21:39.711 +05:30 [INF] CORS policy execution successful.
+2026-01-26 23:21:17.738 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/Label/GetAllLabels - 204 null null 20849.341ms
+2026-01-26 23:21:45.082 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '26-01-2026 06:07:36', Current time (UTC): '26-01-2026 17:51:35'.
+2026-01-26 23:21:46.176 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '26-01-2026 06:07:36', Current time (UTC): '26-01-2026 17:51:46'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2026-01-26 23:21:51.740 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-01-26 23:21:53.366 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '26-01-2026 06:07:36', Current time (UTC): '26-01-2026 17:51:46'.
+2026-01-26 23:21:55.332 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-01-26 23:21:58.144 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-01-26 23:21:59.420 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/api/Label/GetAllLabels - 401 0 null 41366.513ms
+2026-01-26 23:22:00.698 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-01-26 23:22:05.839 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/api/Notes/getNotes - 401 0 null 44359.4923ms

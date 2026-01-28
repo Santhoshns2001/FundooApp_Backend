@@ -8,14 +8,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Email",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "notesId",
-        "Type": "System.Int32",
-        "IsRequired": false
+        "Name": "request",
+        "Type": "ModalLayer.DTOs.Collaborator.AddCollaboratorRequest",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -82,14 +77,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "NotesId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "LabelName",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "request",
+        "Type": "ModalLayer.DTOs.Label.CreateLabelRequest",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -270,7 +260,7 @@
         "IsRequired": false
       },
       {
-        "Name": "Color",
+        "Name": "Colour",
         "Type": "System.String",
         "IsRequired": false
       },
@@ -353,7 +343,7 @@
         "IsRequired": false
       },
       {
-        "Name": "Color",
+        "Name": "Colour",
         "Type": "System.String",
         "IsRequired": false
       },

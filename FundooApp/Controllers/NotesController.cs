@@ -26,7 +26,7 @@ namespace FundooApp.Controllers
 
         [Authorize]
         [HttpPost("notes")]
-        public  async Task<IActionResult> CreateNotes(NotesDTO modal)
+        public  async Task<IActionResult> CreateNotes([FromForm] NotesDTO modal)
         {
             var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
 

@@ -13,7 +13,7 @@ namespace ModalLayer.DTOs.Notes
         public string? Title { get; set; }
         public string? Description { get; set; }
 
-        public string? Color { get; set; }
+        public string? Colour { get; set; }
 
         public IFormFile? Image { get; set; }
 
@@ -21,10 +21,6 @@ namespace ModalLayer.DTOs.Notes
 
         public bool? IsPinned { get; set; }
         public bool? IsArchived { get; set; }
-
-        //public List<int> LabelIds { get; set; }
-
-        //public List<int> CollaboratorUserIds { get; set; }
 
     }
 }

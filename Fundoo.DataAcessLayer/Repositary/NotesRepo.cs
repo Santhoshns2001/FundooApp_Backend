@@ -34,7 +34,7 @@ namespace DataAcessLayer.Repositary
                     UserId=UserId,
                     CreatedAt= DateTime.Now,
                     UpdatedAt= DateTime.Now,
-                    Colour=modal.Color,
+                    Colour=modal.Colour,
                     Reminder=modal.Reminder,
                    // Image=modal.Image,
                     IsPin=modal.IsPinned,
@@ -92,7 +92,7 @@ namespace DataAcessLayer.Repositary
             {
                 existingNote.Description = modal.Description;
                 existingNote.Title = modal.Title;
-                existingNote.Colour = modal.Color;
+                existingNote.Colour = modal.Colour;
                // existingNote.Image = modal.Image;
                 existingNote.Reminder= modal.Reminder;
                 existingNote.IsPin = modal.IsPinned;

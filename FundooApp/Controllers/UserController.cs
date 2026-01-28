@@ -34,7 +34,7 @@ namespace FundooApp.Controllers
 
 
         [HttpPost("register")]
-        public async Task<IActionResult> Register(UserRegisterDTO request)
+        public async Task<IActionResult> Register( UserRegisterDTO request)
         {
 
             if (!ModelState.IsValid)

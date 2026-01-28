@@ -4,6 +4,7 @@ using System.Linq;
 using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
+using BusinessLogicLayer.Exceptions;
 using BusinessLogicLayer.Interfaces;
 using DataAcessLayer.Data;
 using DataAcessLayer.Interface;
@@ -16,11 +17,12 @@ namespace BusinessLogicLayer.Service
 {
    public class UserBuss : IUserRegisterBuss
     {
-        private  readonly IUserRepo _userRepo;
+        private readonly IUserRepo _userRepo;
         private readonly IJWTService _jwtService;
         private readonly IEmailService _emailService;
         private readonly IRabbitMqProducer _rabbitMqProducer;
         private readonly FundooDBContext context;
+
         public UserBuss( IUserRepo userRepo,IJWTService jWTService,IEmailService emailService,IRabbitMqProducer rabbitMqProducer,FundooDBContext dBContext)
         {
             this._userRepo = userRepo;
@@ -35,7 +37,7 @@ namespace BusinessLogicLayer.Service
            var user= _userRepo.LoginUser(loginDTO);
 
             if (user == null) {
-                throw new Exception("User Not Found");
+                throw new UserNotFoundException("User Not Found");
             }
 
           return  _jwtService.GenerateToken(user.Email,user.UserId);
@@ -46,7 +48,7 @@ namespace BusinessLogicLayer.Service
 
             if (Check(request.Email))
             {
-                throw new InvalidOperationException("Email already exists");
+                throw new EmailAlreadyExist("Email already exists");
             }
                 var user = _userRepo.UserRegister(request);
 

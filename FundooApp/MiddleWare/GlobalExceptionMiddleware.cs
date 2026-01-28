@@ -1,5 +1,6 @@
 ﻿using System.Net;
 using System.Text.Json;
+using BusinessLogicLayer.Exceptions;
 
 namespace FundooApp.MiddleWare
 {
@@ -20,6 +21,32 @@ namespace FundooApp.MiddleWare
             {
                 await _next(context);
             }
+            catch (EmailAlreadyExist ex)
+            {
+                context.Response.StatusCode = (int)HttpStatusCode.Conflict;
+                context.Response.ContentType = "application/json";
+
+                var response = new
+                {
+                    IsSuccess = false,
+                    Message = ex.Message
+                };
+
+                await context.Response.WriteAsync(JsonSerializer.Serialize(response));
+            }
+            catch (UserNotFoundException ex)
+            {
+                context.Response.StatusCode = (int)HttpStatusCode.NotFound;
+                context.Response.ContentType = "application/json";
+
+                var response = new
+                {
+                    IsSuccess = false,
+                    Message = ex.Message
+                };
+
+                await context.Response.WriteAsync(JsonSerializer.Serialize(response));
+            }
             catch (Exception ex)
             {
                 _logger.LogError(
@@ -37,9 +64,9 @@ namespace FundooApp.MiddleWare
                     Message = "An unexpected error occurred"
                 };
 
-                await context.Response.WriteAsync(
-                    JsonSerializer.Serialize(response));
+                await context.Response.WriteAsync(JsonSerializer.Serialize(response));
             }
         }
+
     }
 }

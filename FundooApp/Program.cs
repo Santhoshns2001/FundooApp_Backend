@@ -28,6 +28,19 @@ Log.Logger = new LoggerConfiguration()
     )
     .CreateLogger();
 
+
+// CORS 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAngularApp", policy =>
+    {
+        policy.WithOrigins("http://localhost:4200")
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
+
+
 //  Tell ASP.NET Core to use Serilog
 builder.Host.UseSerilog();
 
@@ -39,6 +52,10 @@ builder.Services.AddControllers()
         options.SerializerSettings.ReferenceLoopHandling =
             ReferenceLoopHandling.Ignore;
     });
+
+
+
+
 
 // ---------------- JWT ----------------
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -143,6 +160,9 @@ var app = builder.Build();
 
 //----------Custom Middleware------------------
 app.UseMiddleware<GlobalExceptionMiddleware>();
+
+
+app.UseCors("AllowAngularApp");
 
 
 // ---------------- Pipeline ----------------

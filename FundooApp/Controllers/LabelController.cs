@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ModalLayer.DTOs;
+using ModalLayer.DTOs.Label;
 using ModalLayer.Entities;
 
 namespace FundooApp.Controllers
@@ -22,7 +23,7 @@ namespace FundooApp.Controllers
         [HttpPost]
         [Authorize]
         [Route("addLabel")]
-        public IActionResult CreateLabel(int NotesId, string LabelName)
+        public IActionResult CreateLabel( [FromBody] CreateLabelRequest request)
         {
             var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
 
@@ -31,7 +32,7 @@ namespace FundooApp.Controllers
 
             int userId = int.Parse(userIdClaim.Value);
 
-            Label label=labelBuss.CreateLabel(userId, LabelName);
+            Label label=labelBuss.CreateLabel(userId, request.LabelName);
 
             if (label != null)
             {
@@ -118,7 +119,7 @@ namespace FundooApp.Controllers
         [HttpPost]
         [Authorize]
         [Route("AddLabelToNote")]
-        public IActionResult AddLabelToNote(int LabelId,int NotesId)
+        public IActionResult AddLabelToNote([FromQuery]int LabelId,[FromQuery] int NotesId)
         {
             var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
 
